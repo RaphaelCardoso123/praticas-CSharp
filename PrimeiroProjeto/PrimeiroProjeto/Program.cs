@@ -5,17 +5,22 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
+
+
+            /*
+            *(4) PARSE / CULTUREINFO.INVARIANTCULTURE 
             int n1 = int.Parse(Console.ReadLine());
             char ch = char.Parse(Console.ReadLine());
             double n2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
             Console.WriteLine("Você digitou: ");
             Console.WriteLine(n1);
             Console.WriteLine(ch);
             Console.WriteLine(n2.ToString("F2", CultureInfo.InvariantCulture));
+            */
+
 
             /*
-            *(3)SPLIT 
+            *(3) SPLIT / CONSOLE.READLINE
             string s = Console.ReadLine(); //Outra maneira é tirar essa parte..
             string[] vet = s.Split(' ');   //string[] vet = Console.ReadLine().Split(' ');
             string p1 = vet[0];
@@ -26,7 +31,7 @@ namespace Course {
 
 
             /*
-            *(2)SAÍDA DE DADOS
+            *(2) SAÍDA DE DADOS / PLACEHOLDER, INTERPOLAÇÃO, CONCATENAÇÃO
             string produto1 = "Computador";
             string produto2 = "Mesa de escritório";
             byte idade = 30;
@@ -46,7 +51,7 @@ namespace Course {
 
 
             /*
-            *(1)SAÍDA DE DADOS
+            *(1) SAÍDA DE DADOS / CONCATENAÇÃO, CULTUREINFO.INVARIANTCULTURE
             int idade = 32;
             double saldo = 10.35784;
             string nome = "Maria";
