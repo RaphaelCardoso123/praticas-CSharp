@@ -5,9 +5,54 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
+            Console.WriteLine("Insira o código do funcionário: ");
+            int cod = int.Parse(Console.ReadLine());
+            Console.WriteLine("Insira as horas trabalhadas: ");
+            double horas = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Insira o valor de sua hora: ");
+            double valHoras = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            double salario = horas * valHoras;
+
+            Console.WriteLine("NUMBER = " + cod);
+            Console.WriteLine("SALARY = U$ " + salario.ToString("f2", CultureInfo.InvariantCulture));
 
 
-            
+            /*
+            *(8) EXERCICIOS 
+            Console.WriteLine("Insira um número:");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Insira mais um número: ");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Insira mais um número: ");
+            int c = int.Parse(Console.ReadLine());
+            Console.WriteLine("Insira o último número: ");
+            int d = int.Parse(Console.ReadLine());
+            int diferenca = (a * b) - (c * d);
+            Console.WriteLine("DIFERENÇA = " + diferenca);
+            */
+
+
+            /*
+            *(7) EXERCICIOS 
+            //PRIM.OPÇÃO
+            Console.WriteLine("Entre com um número inteiro: ");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Entre com mais um número inteiro: ");
+            int num2 = int.Parse(Console.ReadLine());
+            int num3 = num1 + num2;
+            Console.WriteLine("SOMA = " + num3);
+            //SEG.OPÇÃO
+            string[] num = Console.ReadLine().Split(' ');
+            int a = int.Parse(num[0]);
+            int b = int.Parse(num[1]);
+            int c = a + b;
+            Console.WriteLine("SOMA = " + c);
+            */
+
+
+            /*
+            //(6)  VETOR,SPLIT,PARSE /  TOSTRING("F2,CULTUREINFO.INVARIANTCULTURE / inserindo dados+espaço e dados+enter
             Console.WriteLine("Entre com seu nome completo: ");
             string nome = Console.ReadLine();
             Console.WriteLine("Quantos quartos tem na sua casa? ");
@@ -26,7 +71,7 @@ namespace Course {
             Console.WriteLine(dados[0]); // Posso colocar "ultNome" que tm dá certo
             Console.WriteLine(dados[1]); // Posso colocar "idade" que tm dá certo
             Console.WriteLine(altura.ToString("F2", CultureInfo.InvariantCulture)); //Se colocar "dados[2]" não d´´a certo!!??
-            
+            */
 
 
             /*
@@ -101,7 +146,7 @@ namespace Course {
             // Essa é a única forma possivel de passar o (.) no lugar da (,) usando => "saldo".ToString("F2",CultureInfo.InvariantCulture)
             Console.WriteLine(nome + " tem " + idade + " anos de idade e " + saldo.ToString("F2",CultureInfo.InvariantCulture) + " de reais no banco." ); 
             */
-              
+
         }
     }
 }
