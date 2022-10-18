@@ -5,10 +5,30 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
+          
+            
+
+
+            //(5) VETOR /  TOSTRING("F2,CULTUREINFO.INVARIANTCULTURE / (dessa forma cada dado inserido precisa + Espaço)
+            string[] vet = Console.ReadLine().Split(' ');
+            string nome = vet[0];
+            char sexo = char.Parse(vet[1]);
+            int idade = int.Parse(vet[2]);
+            double altura = double.Parse(vet[3], CultureInfo.InvariantCulture);
+            Console.WriteLine("Seus dados foram: ");
+            Console.WriteLine("Nome: " + nome);           
+            Console.WriteLine("Sexo: " + sexo);           
+            Console.WriteLine("Idade: " + idade);           
+            Console.WriteLine("Altura: " + altura.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine(vet[2]);
+            Console.WriteLine(vet[1]);
+            Console.WriteLine(vet[3]);
+            Console.WriteLine(vet[0]);
+        
 
 
             /*
-            *(4) PARSE / CULTUREINFO.INVARIANTCULTURE 
+            *(4) PARSE / CULTUREINFO.INVARIANTCULTURE / (dessa forma cada dado inserido precisa + Enter)
             int n1 = int.Parse(Console.ReadLine());
             char ch = char.Parse(Console.ReadLine());
             double n2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -60,7 +80,7 @@ namespace Course {
             // Essa é a única forma possivel de passar o (.) no lugar da (,) usando => "saldo".ToString("F2",CultureInfo.InvariantCulture)
             Console.WriteLine(nome + " tem " + idade + " anos de idade e " + saldo.ToString("F2",CultureInfo.InvariantCulture) + " de reais no banco." ); 
             */
-              
+
         }
     }
 }
