@@ -7,8 +7,29 @@ namespace Course {
 
 
 
+            
+            Console.WriteLine("Entre com seu nome completo: ");
+            string nome = Console.ReadLine();
+            Console.WriteLine("Quantos quartos tem na sua casa? ");
+            int quartos = int.Parse(Console.ReadLine());
+            Console.WriteLine("Entre com o preço de um produto: ");
+            double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Entre seu último nome, idade e altura: ");           
+            string[] dados = Console.ReadLine().Split(' ');
+            string ultNome = dados[0];
+            int idade = int.Parse(dados[1]);
+            double altura = double.Parse(dados[2], CultureInfo.InvariantCulture);
+            Console.WriteLine("SEUS DADOS FORAM: ");
+            Console.WriteLine(nome);
+            Console.WriteLine(quartos);
+            Console.WriteLine(preco.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine(dados[0]); // Posso colocar "ultNome" que tm dá certo
+            Console.WriteLine(dados[1]); // Posso colocar "idade" que tm dá certo
+            Console.WriteLine(altura.ToString("F2", CultureInfo.InvariantCulture)); //Se colocar "dados[2]" não d´´a certo!!??
+            
 
 
+            /*
             //(5) VETOR /  TOSTRING("F2,CULTUREINFO.INVARIANTCULTURE / (dessa forma cada dado inserido precisa + Espaço)
             string[] vet = Console.ReadLine().Split(' ');
             string nome = vet[0];
@@ -24,7 +45,7 @@ namespace Course {
             Console.WriteLine(vet[1]);
             Console.WriteLine(vet[3]);
             Console.WriteLine(vet[0]);
-
+            */
 
 
             /*
