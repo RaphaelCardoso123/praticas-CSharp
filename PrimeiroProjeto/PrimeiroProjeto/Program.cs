@@ -6,9 +6,32 @@ namespace Course {
         static void Main(string[] args) {
 
 
+            /*
+            *(13)FUNÇÃO 
+            Console.WriteLine("Digite três números..");
+            int n1 = int.Parse(Console.ReadLine());
+            int n2 = int.Parse(Console.ReadLine());
+            int n3 = int.Parse(Console.ReadLine());
+            double resultado = Maior(n1, n2, n3);
+            Console.WriteLine("O maior número foi o " + resultado);
+        }
+        static int Maior(int a, int b, int c) {
+            int m;
+            if (a > b && a > c) {
+                m = a;
+            }
+            else if (b > c) {
+                m = b;
+            }
+            else {
+                m = c;
+            }
+            return m;
+         //}
+         */
 
 
-           
+            /*
             //*(12) EXERCICIOS
             Console.WriteLine("Digite um valor inteiro: ");
             int x = int.Parse(Console.ReadLine());
@@ -19,7 +42,7 @@ namespace Course {
             } else {
                 Console.WriteLine("Não são multiplos!");
             };
-          
+            */
 
 
             /*
