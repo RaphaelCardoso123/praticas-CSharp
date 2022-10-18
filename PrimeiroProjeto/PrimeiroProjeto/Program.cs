@@ -8,18 +8,18 @@ namespace Course {
 
 
 
-            /*
-            *(12) EXERCICIOS
+           
+            //*(12) EXERCICIOS
             Console.WriteLine("Digite um valor inteiro: ");
-            int a = int.Parse(Console.ReadLine());
+            int x = int.Parse(Console.ReadLine());
             Console.WriteLine("Digite outro valor inteiro: ");
-            int b = int.Parse(Console.ReadLine());
-            if (a % b == 0) {
+            int y = int.Parse(Console.ReadLine());
+            if (x % y == 0) {
                 Console.WriteLine("São multiplos!");
             } else {
                 Console.WriteLine("Não são multiplos!");
             };
-            */
+          
 
 
             /*
