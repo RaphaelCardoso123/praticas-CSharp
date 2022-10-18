@@ -6,31 +6,50 @@ namespace Course {
         static void Main(string[] args) {
 
 
-            string[] total = Console.ReadLine().Split(' ');
 
+
+            /*
+            *(12) EXERCICIOS
+            Console.WriteLine("Digite um valor inteiro: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite outro valor inteiro: ");
+            int b = int.Parse(Console.ReadLine());
+            if (a % b == 0) {
+                Console.WriteLine("São multiplos!");
+            } else {
+                Console.WriteLine("Não são multiplos!");
+            };
+            */
+
+
+            /*
+            *(11) EXERCICIOS
+            Console.WriteLine("Digite um número inteiro: ");
+            int x = int.Parse(Console.ReadLine());
+            if( x >= 0 ) {
+                Console.WriteLine("POSITIVO");
+            }else {
+                Console.WriteLine("NEGATIVO");
+            };
+            
+
+            /*
+            *(10) EXERCICIOS
             Console.WriteLine("Código da peça 1: ");
             int cod1 = int.Parse(Console.ReadLine());
-
             Console.WriteLine("Quantidade de peça 1: ");
             int num1 = int.Parse(Console.ReadLine());
-
             Console.WriteLine("Valor da peça 1: ");
-            double val1 = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
+            double val1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.WriteLine("Código da peça 2: ");
             int cod2 = int.Parse(Console.ReadLine());
-
             Console.WriteLine("Quantidade de peça 2: ");
             int num2 = int.Parse(Console.ReadLine());
-
             Console.WriteLine("Valor da peça 1: ");
-            double val2 = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
+            double val2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             double pagar = (num1 * val1) + (num2 * val2);
-
-
             Console.WriteLine("VALOR A PAGAR: R$ " + pagar.ToString("F2", CultureInfo.InvariantCulture));
-
+            */
 
 
             /*
@@ -81,7 +100,7 @@ namespace Course {
 
 
             /*
-            //(6)  VETOR,SPLIT,PARSE /  TOSTRING("F2,CULTUREINFO.INVARIANTCULTURE / inserindo dados+espaço e dados+enter
+            *(6)  VETOR,SPLIT,PARSE /  TOSTRING("F2,CULTUREINFO.INVARIANTCULTURE / inserindo dados+espaço e dados+enter
             Console.WriteLine("Entre com seu nome completo: ");
             string nome = Console.ReadLine();
             Console.WriteLine("Quantos quartos tem na sua casa? ");
@@ -104,7 +123,7 @@ namespace Course {
 
 
             /*
-            //(5) VETOR /  TOSTRING("F2,CULTUREINFO.INVARIANTCULTURE / (dessa forma cada dado inserido precisa + Espaço)
+            *(5) VETOR /  TOSTRING("F2,CULTUREINFO.INVARIANTCULTURE / (dessa forma cada dado inserido precisa + Espaço)
             string[] vet = Console.ReadLine().Split(' ');
             string nome = vet[0];
             char sexo = char.Parse(vet[1]);
