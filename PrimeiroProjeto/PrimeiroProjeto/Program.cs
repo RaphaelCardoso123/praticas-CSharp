@@ -5,17 +5,46 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
+
+            string[] total = Console.ReadLine().Split(' ');
+
+            Console.WriteLine("Código da peça 1: ");
+            int cod1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Quantidade de peça 1: ");
+            int num1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Valor da peça 1: ");
+            double val1 = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Console.WriteLine("Código da peça 2: ");
+            int cod2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Quantidade de peça 2: ");
+            int num2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Valor da peça 1: ");
+            double val2 = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            double pagar = (num1 * val1) + (num2 * val2);
+
+
+            Console.WriteLine("VALOR A PAGAR: R$ " + pagar.ToString("F2", CultureInfo.InvariantCulture));
+
+
+
+            /*
+            *(9) EXERCICIOS 
             Console.WriteLine("Insira o código do funcionário: ");
             int cod = int.Parse(Console.ReadLine());
             Console.WriteLine("Insira as horas trabalhadas: ");
             double horas = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.WriteLine("Insira o valor de sua hora: ");
             double valHoras = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
             double salario = horas * valHoras;
-
             Console.WriteLine("NUMBER = " + cod);
             Console.WriteLine("SALARY = U$ " + salario.ToString("f2", CultureInfo.InvariantCulture));
+            */
 
 
             /*
