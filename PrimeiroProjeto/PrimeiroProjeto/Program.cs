@@ -1,13 +1,35 @@
-﻿using System;
+﻿using PrimeiroProjeto;
+using System;
 using System.Globalization;
 
 namespace Course {
     class Program {
         static void Main(string[] args) {
 
+            Pessoa p1 = new Pessoa();
+            Pessoa p2 = new Pessoa();
+
+            Console.WriteLine("Dados da primeira pessoa:");
+            Console.WriteLine("Nome: ");
+            p1.Nome = Console.ReadLine();
+            Console.WriteLine("Idade: ");
+            p1.Idade = int.Parse(Console.ReadLine());
+        
+            Console.WriteLine("Dados da segunda pessoa:");
+            Console.WriteLine("Nome: ");
+            p2.Nome = Console.ReadLine();
+            Console.WriteLine("Idade: ");
+            p2.Idade = int.Parse(Console.ReadLine());
+
+            if( p1.Idade > p2.Idade) {
+                Console.WriteLine("A pessoa mais velha é a(o): " + p1.Nome);
+            }
+            else {
+                Console.WriteLine("Pessoa mais velha é a(o): " + p2.Nome);
+            }
 
             /*
-            *(10) EXERCICIOS / WHILE
+            *(14) EXERCICIOS / WHILE
             int gasolina = 0;
             int alcool = 0;
             int diesel = 0;           
