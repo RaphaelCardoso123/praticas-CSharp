@@ -6,27 +6,47 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
+
+            SalariomMedio p1 = new SalariomMedio();
+            SalariomMedio p2 = new SalariomMedio();
+
+            Console.WriteLine("Dados do primeiro funcionário: ");
+            Console.WriteLine("Nome: ");
+            p1.Nome = Console.ReadLine();
+            Console.WriteLine("Salário: ");
+            p1.Salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Console.WriteLine("Dados do segundo funcionário: ");
+            Console.WriteLine("Nome: ");
+            p2.Nome = Console.ReadLine();
+            Console.WriteLine("Salário: ");
+            p2.Salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            double medio = (p1.Salario + p2.Salario) / 2;
+            Console.WriteLine("Salário médio = " + medio.ToString ("F2", CultureInfo.InvariantCulture));
+
+            /*
+            *(15) EXERCICIOS / CLASSE / METODOS
             Pessoa p1 = new Pessoa();
             Pessoa p2 = new Pessoa();
-
             Console.WriteLine("Dados da primeira pessoa:");
             Console.WriteLine("Nome: ");
             p1.Nome = Console.ReadLine();
             Console.WriteLine("Idade: ");
-            p1.Idade = int.Parse(Console.ReadLine());
-        
+            p1.Idade = int.Parse(Console.ReadLine());        
             Console.WriteLine("Dados da segunda pessoa:");
             Console.WriteLine("Nome: ");
             p2.Nome = Console.ReadLine();
             Console.WriteLine("Idade: ");
             p2.Idade = int.Parse(Console.ReadLine());
-
             if( p1.Idade > p2.Idade) {
                 Console.WriteLine("A pessoa mais velha é a(o): " + p1.Nome);
             }
             else {
                 Console.WriteLine("Pessoa mais velha é a(o): " + p2.Nome);
             }
+            */
+
 
             /*
             *(14) EXERCICIOS / WHILE
