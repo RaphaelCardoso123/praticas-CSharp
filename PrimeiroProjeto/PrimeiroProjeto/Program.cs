@@ -7,11 +7,12 @@ namespace Course {
         static void Main(string[] args) {
 
 
-            Produto p = new Produto();
+
+            Produto p = new Produto ();
 
             Console.WriteLine("Digite os dados do produto: ");
             Console.WriteLine("Nome: ");
-            p.Nome = Console.ReadLine();
+            p.Nome = Console.ReadLine ();
             Console.WriteLine("Preço: ");
             p.Preco = double.Parse(Console.ReadLine());
             Console.WriteLine("Quantidade: ");
@@ -21,7 +22,7 @@ namespace Course {
             Console.WriteLine("Dados do produto: " + p);
 
             Console.WriteLine();
-            Console.WriteLine("Quantos produtos serão adicionados? ");
+            Console.WriteLine("Quantidade de produto adicionado? ");
             int qtd = int.Parse(Console.ReadLine());
             p.AdicionarProduto(qtd);
 
@@ -29,7 +30,7 @@ namespace Course {
             Console.WriteLine("Dados atualizados:" + p);
 
             Console.WriteLine();
-            Console.WriteLine("Quantos produtos serão removidos? ");
+            Console.WriteLine("Quantidade de produto removido? ");
             qtd = int.Parse(Console.ReadLine());
             p.RemoverProduto(qtd);
 
