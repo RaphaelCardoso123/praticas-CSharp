@@ -7,23 +7,59 @@ namespace Course {
         static void Main(string[] args) {
 
 
+            Produto p = new Produto();
+
+            Console.WriteLine("Digite os dados do produto: ");
+            Console.WriteLine("Nome: ");
+            p.Nome = Console.ReadLine();
+            Console.WriteLine("Preço: ");
+            p.Preco = double.Parse(Console.ReadLine());
+            Console.WriteLine("Quantidade: ");
+            p.Quantidade = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine(); //só para pular uma linha
+            Console.WriteLine("Dados do produto: " + p);
+
+            Console.WriteLine();
+            Console.WriteLine("Quantos produtos serão adicionados? ");
+            int qtd = int.Parse(Console.ReadLine());
+            p.AdicionarProduto(qtd);
+
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados:" + p);
+
+            Console.WriteLine();
+            Console.WriteLine("Quantos produtos serão removidos? ");
+            qtd = int.Parse(Console.ReadLine());
+            p.RemoverProduto(qtd);
+
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados:" + p);
+
+            
+
+
+
+
+
+            /*
+            *(15) EXERCICIOS / CLASSE / METODOS
             SalariomMedio p1 = new SalariomMedio();
             SalariomMedio p2 = new SalariomMedio();
-
             Console.WriteLine("Dados do primeiro funcionário: ");
             Console.WriteLine("Nome: ");
             p1.Nome = Console.ReadLine();
             Console.WriteLine("Salário: ");
             p1.Salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
             Console.WriteLine("Dados do segundo funcionário: ");
             Console.WriteLine("Nome: ");
             p2.Nome = Console.ReadLine();
             Console.WriteLine("Salário: ");
             p2.Salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
             double medio = (p1.Salario + p2.Salario) / 2;
             Console.WriteLine("Salário médio = " + medio.ToString ("F2", CultureInfo.InvariantCulture));
+            */
+
 
             /*
             *(15) EXERCICIOS / CLASSE / METODOS
