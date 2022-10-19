@@ -6,16 +6,18 @@ namespace Course {
         static void Main(string[] args) {
 
 
+
+
             /*
             *(13)FUNÇÃO 
-            Console.WriteLine("Digite três números..");
+            Console.WriteLine("Digite três números..");                 //USÚARIO DIGITA 3 NÚMEROS
             int n1 = int.Parse(Console.ReadLine());
             int n2 = int.Parse(Console.ReadLine());
             int n3 = int.Parse(Console.ReadLine());
-            double resultado = Maior(n1, n2, n3);
-            Console.WriteLine("O maior número foi o " + resultado);
+            double resultado = Maior(n1, n2, n3);                       //PROGRAMA CHAMA A FUNÇÃO QUE CALCULA O MAIOR
+            Console.WriteLine("O maior número foi o " + resultado);     //MOSTRA NA TELA O RESULTADO
         }
-        static int Maior(int a, int b, int c) {
+        static int Maior(int a, int b, int c) {                         //ESSA É A FUNÇÃO
             int m;
             if (a > b && a > c) {
                 m = a;
