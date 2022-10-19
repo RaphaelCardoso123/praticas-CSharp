@@ -6,6 +6,43 @@ namespace Course {
         static void Main(string[] args) {
 
 
+            /*
+            *(10) EXERCICIOS / WHILE
+            int gasolina = 0;
+            int alcool = 0;
+            int diesel = 0;           
+            Console.WriteLine("Qual combustivel você vai abastecer?");
+            Console.WriteLine("1 = Alcool, 2 = Gasolina, 3 = Diesel, 4 = nenhum");           
+            int tipo = int.Parse(Console.ReadLine());          
+            while (tipo != 4) {
+                if (tipo == 1) {
+                    alcool += +1;
+                }
+            else if (tipo == 2) {
+                    gasolina += +1;
+                }
+            else if (tipo == 3) {
+                    diesel += +1;
+                }
+                tipo = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Muito Obrigado pela preferência!!");
+            Console.WriteLine("Alcool: " + alcool);
+            Console.WriteLine("Gasolina: " + gasolina);
+            Console.WriteLine("Diesel: " + diesel);
+            */
+
+
+            /*
+            *(10) EXERCICIOS
+            Console.Write("Digite sua senha: ");
+            int senha = int.Parse(Console.ReadLine());
+            while (senha != 2022) {
+                Console.WriteLine("Senha inválida...Digite sua senha.");
+                senha = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Acesso permitido!!!");
+            */
 
 
             /*
@@ -34,7 +71,7 @@ namespace Course {
 
 
             /*
-            //*(12) EXERCICIOS
+            *(12) EXERCICIOS
             Console.WriteLine("Digite um valor inteiro: ");
             int x = int.Parse(Console.ReadLine());
             Console.WriteLine("Digite outro valor inteiro: ");
