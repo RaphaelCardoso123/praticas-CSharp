@@ -6,43 +6,53 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
-            /*------------------------------------------------------*/
+            Retangulo r = new Retangulo();
+            Retangulo x = new Retangulo();
+
+            Console.WriteLine("Digite a largura e altura do retângulo: ");
+            Console.WriteLine("Largura: ");
+            r.Largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Altura: ");
+            r.Altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Console.WriteLine();
+            Console.WriteLine("Area = " + r);
+            Console.WriteLine("Perímetro = " + x);
+
+
+
+            
+            /*
+            *(16) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
             Produto p = new Produto ();
-            /*------------------------------------------------------*/
+            
             Console.WriteLine("Digite os dados do produto: ");
             Console.WriteLine("Nome: ");
             p.Nome = Console.ReadLine ();
             Console.WriteLine("Preço: ");
             p.Preco = double.Parse(Console.ReadLine());
             Console.WriteLine("Quantidade: ");
-            p.Quantidade = int.Parse(Console.ReadLine());
-            
+            p.Quantidade = int.Parse(Console.ReadLine());           
             Console.WriteLine(); //só para pular uma linha
             Console.WriteLine("Dados do produto: " + p);
-
-            /*------------------------------------------------------*/
-
+         
             Console.WriteLine();
             Console.WriteLine("Quantidade de produto adicionado? ");
             int qtd = int.Parse(Console.ReadLine());
             p.AdicionarProduto(qtd);
-
             Console.WriteLine();
             Console.WriteLine("Dados atualizados:" + p);
-
-            /*------------------------------------------------------*/
-
+            
             Console.WriteLine();
             Console.WriteLine("Quantidade de produto removido? ");
             qtd = int.Parse(Console.ReadLine());
             p.RemoverProduto(qtd);
-
             Console.WriteLine();
             Console.WriteLine("Dados atualizados:" + p);
+            */
+            
 
-            /*------------------------------------------------------*/
-
-
+            
 
 
 

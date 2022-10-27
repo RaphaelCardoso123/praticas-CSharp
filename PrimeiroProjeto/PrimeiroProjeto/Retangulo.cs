@@ -1,0 +1,22 @@
+﻿using System;
+using System.Globalization;
+
+namespace PrimeiroProjeto {
+    internal class Retangulo {
+
+        /*------------------------------------------------------*/
+        public double Largura;
+        public double Altura;
+
+        /*------------------------------------------------------*/
+        public double Area() {
+            return Largura * Altura;
+        }
+        public double Perimetro() {
+            return 2 * (Largura + Altura);
+        }
+
+        /*------------------------------------------------------*/
+
+    }
+}
