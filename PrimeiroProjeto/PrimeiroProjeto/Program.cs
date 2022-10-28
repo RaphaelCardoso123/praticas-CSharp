@@ -7,7 +7,7 @@ namespace Course {
         static void Main(string[] args) {
 
             Retangulo r = new Retangulo();
-            Retangulo x = new Retangulo();
+            //Retangulo x = new Retangulo();
 
             Console.WriteLine("Digite a largura e altura do retângulo: ");
             Console.WriteLine("Largura: ");
@@ -16,8 +16,8 @@ namespace Course {
             r.Altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Console.WriteLine();
-            Console.WriteLine("Area = " + r);
-            Console.WriteLine("Perímetro = " + x);
+            Console.WriteLine("Area = " + r.Area().ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("Perímetro = " + r.Perimetro().ToString("F2", CultureInfo.InvariantCulture));
 
 
 
