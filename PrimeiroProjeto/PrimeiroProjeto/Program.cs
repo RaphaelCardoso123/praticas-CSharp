@@ -23,7 +23,7 @@ namespace Course {
                 Console.WriteLine("APROVADO");
             } else {
                 Console.WriteLine("REPROVADO");
-                Console.WriteLine("FALTARAM " + a.NotaRestante().ToString("F2", CultureInfo.InvariantCulture) + "PONTOS");
+                Console.WriteLine("FALTARAM " + a.NotaRestante().ToString("F2", CultureInfo.InvariantCulture) + " PONTOS");
             };
 
 
