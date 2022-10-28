@@ -18,10 +18,10 @@ namespace Course {
             Console.WriteLine();
             Console.WriteLine("Area = " + r.Area().ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("Perímetro = " + r.Perimetro().ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("Diagonal = " + r.Diagonal().ToString("F2", CultureInfo.InvariantCulture));
 
 
 
-            
             /*
             *(16) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
             Produto p = new Produto ();
@@ -50,9 +50,9 @@ namespace Course {
             Console.WriteLine();
             Console.WriteLine("Dados atualizados:" + p);
             */
-            
 
-            
+
+
 
 
 
