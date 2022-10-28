@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Globalization;
 
 namespace PrimeiroProjeto {
     internal class Funcionario {
@@ -11,8 +11,12 @@ namespace PrimeiroProjeto {
         public double SalarioLiquido() {
             return SalarioBruto - Imposto;
         }
-        public void AumentarSalario() {
-            return SalarioBruto *
+        public void AumentarSalario(double porcentagem) {
+            SalarioBruto = SalarioBruto + (SalarioBruto * porcentagem / 100);
+        }
+
+        public override string ToString() { 
+            return Nome + ", $" + SalarioLiquido().ToString("F2", CultureInfo.InvariantCulture);
         }
     }
 }

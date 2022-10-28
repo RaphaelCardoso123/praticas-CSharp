@@ -10,10 +10,22 @@ namespace Course {
 
             Console.WriteLine("Digite o nome do funcionário: ");
             f.Nome = (Console.ReadLine());
-            Console.WriteLine("Digite o salário do funcionário: ");
+            Console.WriteLine("Digite o salário bruto do funcionário: ");
             f.SalarioBruto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.WriteLine("Digite o valor de importo a ser descontado: ");
             f.Imposto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            
+            Console.WriteLine();
+            Console.WriteLine("O nome do funcionário é " + f);
+            
+            Console.WriteLine();
+            Console.WriteLine("Digite a porcentagem para aumentar o salário: ");
+            double porcentagem = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            f.AumentarSalario(porcentagem);
+            
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados: " + f);
+
 
            /*
            *(17) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
