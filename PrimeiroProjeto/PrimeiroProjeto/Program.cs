@@ -10,21 +10,20 @@ namespace Course {
 
             Console.WriteLine("Digite o nome do aluno: ");
             a.Nome = (Console.ReadLine());
-            
-            Console.WriteLine();
             Console.WriteLine("Nome do aluno: " + a.Nome);
             Console.WriteLine();
             Console.WriteLine("Digite as três notas do aluno: ");
-            a.N1 = double.Parse(Console.ReadLine());
-            a.N2 = double.Parse(Console.ReadLine());
-            a.N3 = double.Parse(Console.ReadLine());
+            a.N1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            a.N2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            a.N3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            
             Console.WriteLine();
-            Console.WriteLine("NOTA FINAL= " + a.ResultadoFinal());
+            Console.WriteLine("NOTA FINAL= " + a.ResultadoFinal(), CultureInfo.InvariantCulture);
             if (a.Aprovado()) {
                 Console.WriteLine("APROVADO");
             } else {
                 Console.WriteLine("REPROVADO");
-                Console.WriteLine("FALTARAM " + a.NotaRestante().ToString("F2", CultureInfo.InvariantCulture);
+                Console.WriteLine("FALTARAM " + a.NotaRestante().ToString("F2", CultureInfo.InvariantCulture) + "PONTOS");
             };
 
 
