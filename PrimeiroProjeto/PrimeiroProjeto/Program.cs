@@ -6,76 +6,90 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
-            Funcionario f = new Funcionario();
+            Aluno a = new Aluno();
 
+            Console.WriteLine("Digite o nome do aluno: ");
+            a.Nome = (Console.ReadLine());
+            
+            Console.WriteLine();
+            Console.WriteLine("Nome do aluno: " + a.Nome);
+            Console.WriteLine();
+            Console.WriteLine("Digite as três notas do aluno: ");
+            a.N1 = double.Parse(Console.ReadLine());
+            a.N2 = double.Parse(Console.ReadLine());
+            a.N3 = double.Parse(Console.ReadLine());
+            Console.WriteLine();
+            Console.WriteLine("NOTA FINAL= " + a.ResultadoFinal());
+            if (a.Aprovado()) {
+                Console.WriteLine("APROVADO");
+            } else {
+                Console.WriteLine("REPROVADO");
+                Console.WriteLine("FALTARAM " + a.NotaRestante().ToString("F2", CultureInfo.InvariantCulture);
+            };
+
+
+            /*
+            *(18) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
+            Funcionario f = new Funcionario();
             Console.WriteLine("Digite o nome do funcionário: ");
             f.Nome = (Console.ReadLine());
             Console.WriteLine("Digite o salário bruto do funcionário: ");
             f.SalarioBruto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.WriteLine("Digite o valor de importo a ser descontado: ");
-            f.Imposto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            
+            Console.WriteLine("Digite o valor a ser descontado de imposto : ");
+            f.Imposto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);          
             Console.WriteLine();
-            Console.WriteLine("O nome do funcionário é " + f);
-            
+            Console.WriteLine("O nome do funcionário é " + f);           
             Console.WriteLine();
-            Console.WriteLine("Digite a porcentagem para aumentar o salário: ");
+            Console.WriteLine("Digite a porcentagem para aumentar no salário: ");
             double porcentagem = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            f.AumentarSalario(porcentagem);
-            
+            f.AumentarSalario(porcentagem);          
             Console.WriteLine();
             Console.WriteLine("Dados atualizados: " + f);
-
-
-           /*
-           *(17) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
-           Retangulo r = new Retangulo();
-           Console.WriteLine("Digite a largura e altura do retângulo: ");
-           Console.WriteLine("Largura: ");
-           r.Largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-           Console.WriteLine("Altura: ");
-           r.Altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
-           Console.WriteLine();
-           Console.WriteLine("Area = " + r.Area().ToString("F2", CultureInfo.InvariantCulture));
-           Console.WriteLine("Perímetro = " + r.Perimetro().ToString("F2", CultureInfo.InvariantCulture));
-           Console.WriteLine("Diagonal = " + r.Diagonal().ToString("F2", CultureInfo.InvariantCulture));
             */
-            
-
-
-           /*
-           *(16) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
-           Produto p = new Produto ();
-
-           Console.WriteLine("Digite os dados do produto: ");
-           Console.WriteLine("Nome: ");
-           p.Nome = Console.ReadLine ();
-           Console.WriteLine("Preço: ");
-           p.Preco = double.Parse(Console.ReadLine());
-           Console.WriteLine("Quantidade: ");
-           p.Quantidade = int.Parse(Console.ReadLine());           
-           Console.WriteLine(); //só para pular uma linha
-           Console.WriteLine("Dados do produto: " + p);
-
-           Console.WriteLine();
-           Console.WriteLine("Quantidade de produto adicionado? ");
-           int qtd = int.Parse(Console.ReadLine());
-           p.AdicionarProduto(qtd);
-           Console.WriteLine();
-           Console.WriteLine("Dados atualizados:" + p);
-
-           Console.WriteLine();
-           Console.WriteLine("Quantidade de produto removido? ");
-           qtd = int.Parse(Console.ReadLine());
-           p.RemoverProduto(qtd);
-           Console.WriteLine();
-           Console.WriteLine("Dados atualizados:" + p);
-           */
 
 
 
+            /*
+            *(17) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
+            Retangulo r = new Retangulo();
+            Console.WriteLine("Digite a largura e altura do retângulo: ");
+            Console.WriteLine("Largura: ");
+            r.Largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Altura: ");
+            r.Altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine();
+            Console.WriteLine("Area = " + r.Area().ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("Perímetro = " + r.Perimetro().ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("Diagonal = " + r.Diagonal().ToString("F2", CultureInfo.InvariantCulture));
+             */
 
+
+
+            /*
+            *(16) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
+            Produto p = new Produto ();
+            Console.WriteLine("Digite os dados do produto: ");
+            Console.WriteLine("Nome: ");
+            p.Nome = Console.ReadLine ();
+            Console.WriteLine("Preço: ");
+            p.Preco = double.Parse(Console.ReadLine());
+            Console.WriteLine("Quantidade: ");
+            p.Quantidade = int.Parse(Console.ReadLine());           
+            Console.WriteLine(); //só para pular uma linha
+            Console.WriteLine("Dados do produto: " + p);
+            Console.WriteLine();
+            Console.WriteLine("Quantidade de produto adicionado? ");
+            int qtd = int.Parse(Console.ReadLine());
+            p.AdicionarProduto(qtd);
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados:" + p);
+            Console.WriteLine();
+            Console.WriteLine("Quantidade de produto removido? ");
+            qtd = int.Parse(Console.ReadLine());
+            p.RemoverProduto(qtd);
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados:" + p);
+            */
 
 
             /*
