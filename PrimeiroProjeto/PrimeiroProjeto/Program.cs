@@ -6,8 +6,34 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
-            Aluno a = new Aluno();
+            Calculadora calc = new Calculadora();
 
+            Console.WriteLine("Entre o valor do raio: ");
+            double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            double circ = calc.Circunferencia(raio);
+            double volume = calc.Volume(raio);
+
+            Console.WriteLine("Circunferência: " + circ.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("Volume: " + volume.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("Valor de Pi: " + calc.Pi.ToString("F2", CultureInfo.InvariantCulture));
+
+
+
+
+            /*
+            *(20) STATIC
+            Console.Write("Qual a cotação do dólar de hoje? ");
+            double cotacao = double.Parse(Console.ReadLine());
+            Console.Write("Quantos dólares você deseja comprar??");
+            double qtd = double.Parse(Console.ReadLine());  
+            double result = ConversorDeMoeda.DolarParaReal(cotacao, qtd);
+            Console.WriteLine("Valor a ser pago em reais = " + result.ToString("F2", CultureInfo.InvariantCulture));
+            */
+
+            /*
+            *(19) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
+            Aluno a = new Aluno();
             Console.WriteLine("Digite o nome do aluno: ");
             a.Nome = (Console.ReadLine());
             Console.WriteLine("Nome do aluno: " + a.Nome);
@@ -15,8 +41,7 @@ namespace Course {
             Console.WriteLine("Digite as três notas do aluno: ");
             a.N1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             a.N2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            a.N3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            
+            a.N3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);           
             Console.WriteLine();
             Console.WriteLine("NOTA FINAL= " + a.ResultadoFinal(), CultureInfo.InvariantCulture);
             if (a.Aprovado()) {
@@ -25,6 +50,8 @@ namespace Course {
                 Console.WriteLine("REPROVADO");
                 Console.WriteLine("FALTARAM " + a.NotaRestante().ToString("F2", CultureInfo.InvariantCulture) + " PONTOS");
             };
+            */
+
 
 
             /*
