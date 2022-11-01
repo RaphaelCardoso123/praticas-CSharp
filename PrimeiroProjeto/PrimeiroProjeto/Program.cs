@@ -7,25 +7,28 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
+            Produto p = new Produto("Tv", 900.00, 10);
+
+            Console.WriteLine(p.GetNome());
+            Console.WriteLine(p.GetPreco());
+            Console.WriteLine(p.GetQuantidade());
 
 
 
+            /*
+            *(24) SOBRECARGA (CLASSE PRODUTO)
             Console.WriteLine("Digite os dados do produto: ");
             Console.WriteLine("Nome: ");
             string nome = Console.ReadLine();
             Console.WriteLine("Preço: ");
             double preco = double.Parse(Console.ReadLine());
-
             Produto p = new Produto(nome, preco);
-
             Console.WriteLine();
             Console.WriteLine("Dados do produto: " + p);
-
             Console.WriteLine(); //só para pular uma linha
             Console.WriteLine("Dados do produto: " + p);
             Console.WriteLine();
-            Console.WriteLine("Quantidade de produto adicionado? ");
-            
+            Console.WriteLine("Quantidade de produto adicionado? ");         
             int qtd = int.Parse(Console.ReadLine());
             p.AdicionarProduto(qtd);
             Console.WriteLine();
@@ -36,9 +39,12 @@ namespace Course {
             p.RemoverProduto(qtd);
             Console.WriteLine();
             Console.WriteLine("Dados atualizados:" + p);
+            /*
+
+
 
             /*
-            *(23) CONSTRUTORES
+            *(23) CONSTRUTORES (CLASSE PRODUTO)
             Console.WriteLine("Digite os dados do produto: ");
             Console.WriteLine("Nome: ");
             string nome = Console.ReadLine ();
