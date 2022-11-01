@@ -1,22 +1,54 @@
 ﻿using PrimeiroProjeto;
 using System;
 using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Course {
     class Program {
         static void Main(string[] args) {
 
+       
+             Console.WriteLine("Digite os dados do produto: ");
+             Console.WriteLine("Nome: ");
+             string nome = Console.ReadLine ();
+             Console.WriteLine("Preço: ");
+             double preco = double.Parse(Console.ReadLine());
+             Console.WriteLine("Quantidade: ");
+             int quantidade = int.Parse(Console.ReadLine());
+
+             Produto p = new Produto(nome, preco, quantidade);
+
+             Console.WriteLine(); //só para pular uma linha
+             Console.WriteLine("Dados do produto: " + p);
+             Console.WriteLine();
+             Console.WriteLine("Quantidade de produto adicionado? ");
+             int qtd = int.Parse(Console.ReadLine());
+             p.AdicionarProduto(qtd);
+             Console.WriteLine();
+             Console.WriteLine("Dados atualizados:" + p);
+             Console.WriteLine();
+             Console.WriteLine("Quantidade de produto removido? ");
+             qtd = int.Parse(Console.ReadLine());
+             p.RemoverProduto(qtd);
+             Console.WriteLine();
+             Console.WriteLine("Dados atualizados:" + p);
+            
 
 
-            Console.WriteLine("Entre o valor do raio: ");
-            double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            double circ = Calculadora.Circunferencia(raio);
-            double volume = Calculadora.Volume(raio);
 
-            Console.WriteLine("Circunferência: " + circ.ToString("F2", CultureInfo.InvariantCulture));
-            Console.WriteLine("Volume: " + volume.ToString("F2", CultureInfo.InvariantCulture));
-            Console.WriteLine("Valor de Pi: " + Calculadora.Pi.ToString("F2", CultureInfo.InvariantCulture));
+              /*
+              *(22) STATIC
+              Console.WriteLine("Entre o valor do raio: ");
+              double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+              double circ = Calculadora.Circunferencia(raio);
+              double volume = Calculadora.Volume(raio);
+              Console.WriteLine("Circunferência: " + circ.ToString("F2", CultureInfo.InvariantCulture));
+              Console.WriteLine("Volume: " + volume.ToString("F2", CultureInfo.InvariantCulture));
+              Console.WriteLine("Valor de Pi: " + Calculadora.Pi.ToString("F2", CultureInfo.InvariantCulture));
+              */
+
+
 
             /*
             *(21) STATIC
