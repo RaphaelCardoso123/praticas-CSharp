@@ -9,11 +9,18 @@ namespace PrimeiroProjeto {
         public double Preco;
         public int Quantidade;
         /*------------------------------------------------------*/
-
+        //construtor
         public Produto(string nome, double preco, int quantidade) {
             Nome = nome;
             Quantidade = quantidade;
             Preco = preco;  
+        }
+        /*------------------------------------------------------*/
+        //Sobrecarga
+        public Produto(string nome, double preco) {
+            Nome = nome;
+            Preco = preco;
+            Quantidade = 10; 
         }
         /*------------------------------------------------------*/
         public double ValorTotalEmEstoque() {
