@@ -175,7 +175,7 @@ namespace Course {
 
 
             /*
-            *(16) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
+            *(16) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS (CLASSE PRODUTO)
             Produto p = new Produto ();
             Console.WriteLine("Digite os dados do produto: ");
             Console.WriteLine("Nome: ");
