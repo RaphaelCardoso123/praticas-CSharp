@@ -8,7 +8,12 @@ namespace Course {
         static void Main(string[] args) {
 
 
-
+            Console.WriteLine("Entre com o número da conta: ");
+            int numeroConta = int.Parse(Console.ReadLine());
+            Console.WriteLine("Entre o títular da conta: ");
+            string titularConta = Console.ReadLine();
+            Console.WriteLine("Haverá depósito inicial? ");
+            bool depositoConta = false;
 
 
 
