@@ -7,24 +7,25 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
+
+
+
+
+
+            /*
+            *(25) PROPERTIES / AUTOPROPERTIES (CLASSE PRODUTO)
             Produto p = new Produto("Tv", 900.00, 10);
-
-
             p.Nome = "Laptop"; //Usando properties
             Console.WriteLine(p.Nome);//Usando properties
-
             Console.WriteLine(p.Preco);//Usando properties. Só se escreve na tela pq ñ foi feito o Set na classe Produtos
             Console.WriteLine(p.Quantidade);//Usando properties. Só se escreve na tela pq ñ foi feito o Set na classe Produtos
-
-            
             //p.SetNome("Laptop");
             //Console.WriteLine(p.GetNome());
-
             //p.SetPreco(2300);
             //Console.WriteLine(p.GetPreco());
-
             //p.SetQuantidade(5);
             //Console.WriteLine(p.GetQuantidade());
+            */
             
 
 
