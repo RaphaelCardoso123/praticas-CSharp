@@ -9,8 +9,14 @@ namespace Course {
 
             Produto p = new Produto("Tv", 900.00, 10);
 
+
+            p.Nome = "Tv 4K"; //Usando properties
+            Console.WriteLine(p.Nome);//Usando properties
+
+            /*
             p.SetNome("Laptop");
             Console.WriteLine(p.GetNome());
+            */
 
             p.SetPreco(2300);
             Console.WriteLine(p.GetPreco());

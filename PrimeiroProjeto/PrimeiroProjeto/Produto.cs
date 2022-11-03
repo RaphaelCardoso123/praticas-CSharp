@@ -31,7 +31,20 @@ namespace PrimeiroProjeto {
         /*------------------------------------------------------*/
         /*------------------------------------------------------*/
         //Encapsulamento (Get)
+        
+        //Properties
+        public string Nome {
+            get { return _nome; }
+            set {
+                if(value != null && value.Length > 1) {
+                    _nome = value;
+                }
+            }
+        }
+
+
         //Métodos
+        /*
         public string GetNome() {
             return _nome;
         }
@@ -40,7 +53,7 @@ namespace PrimeiroProjeto {
                 _nome = nome;                    //"nome.Length > 1" é p/ que nome tenha mais de uma letra
             }
         }
-
+        */
 
         public double GetPreco() {
             return _preco;
