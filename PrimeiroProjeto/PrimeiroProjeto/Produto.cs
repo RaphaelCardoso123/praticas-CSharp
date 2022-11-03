@@ -5,8 +5,8 @@ namespace PrimeiroProjeto {
     internal class Produto {
 
         /*------------------------------------------------------*/
-        private string _nome;//Encapsulamento (private) (_nome)
-        private double _preco;
+        private string _nome;//Encapsulamento (private) 
+        private double _preco;//Quando se trabalha com private precisa usar o padrão _ e a primeira letra minúscula ex:(_nome)
         private int _quantidade;
         /*------------------------------------------------------*/
         /*------------------------------------------------------*/
@@ -31,16 +31,29 @@ namespace PrimeiroProjeto {
         /*------------------------------------------------------*/
         /*------------------------------------------------------*/
         //Encapsulamento (Get)
+        //Métodos
         public string GetNome() {
             return _nome;
         }
+        public void SetNome(string nome) {
+            _nome = nome;
+        }
+
+
         public double GetPreco() {
             return _preco;
         }
+        public void SetPreco(double preco) {
+            _preco = preco;
+        }
+
+
         public int GetQuantidade() {
             return _quantidade;
         }
-
+        public void SetQuantidade(int quantidade) {
+            _quantidade = quantidade;
+        }
 
 
 

@@ -9,8 +9,13 @@ namespace Course {
 
             Produto p = new Produto("Tv", 900.00, 10);
 
+            p.SetNome("Laptop");
             Console.WriteLine(p.GetNome());
+
+            p.SetPreco(2300);
             Console.WriteLine(p.GetPreco());
+
+            p.SetQuantidade(5);
             Console.WriteLine(p.GetQuantidade());
 
 
