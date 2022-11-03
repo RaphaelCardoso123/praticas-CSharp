@@ -6,8 +6,10 @@ namespace PrimeiroProjeto {
 
         /*------------------------------------------------------*/
         private string _nome;//Encapsulamento (private) 
-        private double _preco;//Quando se trabalha com private precisa usar o padrão _ e a primeira letra minúscula ex:(_nome)
-        private int _quantidade;
+        //private double _preco;//Quando se trabalha com private precisa usar o padrão _ e a primeira letra minúscula ex:(_nome)
+        //private int _quantidade;
+        public double Preco { get; private set; } //usando Auto Propreties
+        public int Quantidade { get; private set; } //usando Auto Propreties
         /*------------------------------------------------------*/
         /*------------------------------------------------------*/
         /*------------------------------------------------------*/
@@ -17,16 +19,18 @@ namespace PrimeiroProjeto {
         //construtor, Encapsulamento (_nome)
         public Produto(string nome, double preco, int quantidade) {
             _nome = nome;
-            _quantidade = quantidade;
-            _preco = preco;  
+            //_quantidade = quantidade;
+            Quantidade = quantidade;
+            //_preco = preco;
+            Preco = preco;
         }
         /*------------------------------------------------------*/
         //Sobrecarga, Encapsulamento (_nome)
-        public Produto(string nome, double preco) {
-            _nome = nome;
-            _preco = preco;
-            _quantidade = 10; 
-        }
+        //public Produto(string nome, double preco) {
+        //   _nome = nome;
+        //    _preco = preco;
+        //    _quantidade = 10; 
+        //}
         /*------------------------------------------------------*/
         /*------------------------------------------------------*/
         /*------------------------------------------------------*/
@@ -42,13 +46,13 @@ namespace PrimeiroProjeto {
             }
         }
 
-        public double Preco {
-            get { return _preco; } //se ñ fizer o Set ñ permite que se altere o preço
-        }
+        //public double Preco {
+        //    get { return Preco; } //se ñ fizer o Set ñ permite que se altere o preço
+        //}
 
-        public int Quantidade { //se ñ fizer o Set ñ permite que se altere a quantidade
-            get { return _quantidade; }
-        }
+        //public int Quantidade { //se ñ fizer o Set ñ permite que se altere a quantidade
+        //   get { return Quantidade; }
+        //}
 
 
 
@@ -62,16 +66,12 @@ namespace PrimeiroProjeto {
                 _nome = nome;                    //"nome.Length > 1" é p/ que nome tenha mais de uma letra
             }
         }
-        
-
         public double GetPreco() {
             return _preco;
         }
         public void SetPreco(double preco) { //Se eu ñ fizer o SetPreco eu ñ permito que seja alterado o preço, sómente o nome seria possivel por ter SetNome
             _preco = preco;
         }
-
-
         public int GetQuantidade() {
             return _quantidade;
         }
@@ -84,15 +84,15 @@ namespace PrimeiroProjeto {
         /*------------------------------------------------------*/
         //Encapsulamento (_nome)
         public double ValorTotalEmEstoque() {
-            return _preco * _quantidade;
+            return Preco * Quantidade;
         }
 
         public void AdicionarProduto(int quantidade) {
-            _quantidade += quantidade;
+            Quantidade += quantidade;
         }
 
         public void RemoverProduto(int quantidade) {
-            _quantidade -= quantidade;
+            Quantidade -= quantidade;
         }
         /*------------------------------------------------------*/
 
@@ -102,9 +102,9 @@ namespace PrimeiroProjeto {
         public override string ToString() {
             return _nome
                    + ", $ "
-                   + _preco.ToString("F2", CultureInfo.InvariantCulture)
+                   + Preco.ToString("F2", CultureInfo.InvariantCulture)
                    + " , "
-                   +_quantidade
+                   + Quantidade
                    + " unidades, Total: $ "
                    + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
         }
