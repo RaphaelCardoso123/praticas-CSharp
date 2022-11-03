@@ -36,11 +36,20 @@ namespace PrimeiroProjeto {
         public string Nome {
             get { return _nome; }
             set {
-                if(value != null && value.Length > 1) {
-                    _nome = value;
+                if(value != null && value.Length > 1) { //usa "value" onde antes usava "nome"
+                    _nome = value;                      //usa "value" onde antes usava "nome"
                 }
             }
         }
+
+        public double Preco {
+            get { return _preco; } //se ñ fizer o Set ñ permite que se altere o preço
+        }
+
+        public int Quantidade { //se ñ fizer o Set ñ permite que se altere a quantidade
+            get { return _quantidade; }
+        }
+
 
 
         //Métodos
@@ -53,7 +62,7 @@ namespace PrimeiroProjeto {
                 _nome = nome;                    //"nome.Length > 1" é p/ que nome tenha mais de uma letra
             }
         }
-        */
+        
 
         public double GetPreco() {
             return _preco;
@@ -69,7 +78,7 @@ namespace PrimeiroProjeto {
         public void SetQuantidade(int quantidade) {//Se eu ñ fizer o SetQuantidade eu ñ permito que seja alterado a quantidade, sómente o nome seria possivel por ter SetNome
             _quantidade = quantidade;
         }
-
+        */
 
 
         /*------------------------------------------------------*/
