@@ -4,31 +4,23 @@
 namespace PrimeiroProjeto {
     internal class Conta {
 
-        public string Titular;
-        private double _deposito;
+
+        public int NumeroConta;
+        public string TitularConta;
         public double Saldo;
+        public string DepositoConta;
+//public double Deposito;
 
 
-        public Conta() { 
-       }
-        public Conta(string titular, double deposito, double saldo) {
-            Titular = titular;
-            _deposito = deposito;
-            Saldo = saldo;
+        public void Depositar(double deposito) {
+            Saldo += deposito;
         }
 
+        public override string ToString() { 
+            return "Conta: " + NumeroConta + ", Titular: " 
+                   + TitularConta + ", Saldo: $" + Saldo.ToString("F2");
 
-        public double Deposito { 
-            get { return _deposito;  }
-            set {
-                if (value > 0) {
-                    _deposito = value;
-                } 
-            }
         }
-        
-        public void NovoSaldo (double saldo){
-            Saldo += saldo;
-        }
+
     }
 }

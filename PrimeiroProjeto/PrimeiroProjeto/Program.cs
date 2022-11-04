@@ -8,41 +8,44 @@ namespace Course {
         static void Main(string[] args) {
 
 
-            Conta c = new Conta();  
+            Conta c = new Conta();
+        //double saldo = 0;
 
             Console.Write("Entre com o número da conta: ");
-            int numeroConta = int.Parse(Console.ReadLine());
+            c.NumeroConta = int.Parse(Console.ReadLine());
             Console.Write("Entre o títular da conta: ");
-            string titularConta = Console.ReadLine();
+            c.TitularConta = Console.ReadLine();
             Console.Write("Haverá depósito inicial? ");
-            char depositoConta = char.Parse(Console.ReadLine());
-            double saldo = 0;
+            c.DepositoConta = (Console.ReadLine());
 
             Console.WriteLine();
-            Console.WriteLine("Dados da conta: ");
-            Console.WriteLine("Conta " + numeroConta + ", Titular: " + titularConta + ", Saldo: $" + saldo.ToString("F2"));
+            Console.WriteLine("Dados da conta: " + c);
+        //Console.WriteLine("Conta: " + numeroConta + ", Titular: " + titularConta + ", Saldo: $" + saldo.ToString("F2"));
 
             Console.WriteLine();
             Console.Write("Entre com o valor para depósito: ");
             double deposito = double.Parse(Console.ReadLine());
+            c.Depositar(deposito);
 
             Console.WriteLine();
             Console.WriteLine("Dados da conta atualizada: ");
-            Console.WriteLine("Conta " + numeroConta + ", Titular: " + titularConta + ", Saldo: $" + saldo.ToString("F2"));
+        //Console.WriteLine("Conta " + numeroConta + ", Titular: " + titularConta + ", Saldo: $" + saldo.ToString("F2"));
+
+
 
             /*
-            Produto p = new Produto();
-            Console.WriteLine("Digite os dados do produto: ");
-            Console.WriteLine("Nome: ");
-            p.Nome = Console.ReadLine();
-            Console.WriteLine("Preço: ");
-            p.Preco = double.Parse(Console.ReadLine());
-            Console.WriteLine("Quantidade: ");
-            p.Quantidade = int.Parse(Console.ReadLine());
+Produto p = new Produto();
+Console.WriteLine("Digite os dados do produto: ");
+Console.WriteLine("Nome: ");
+p.Nome = Console.ReadLine();
+Console.WriteLine("Preço: ");
+p.Preco = double.Parse(Console.ReadLine());
+Console.WriteLine("Quantidade: ");
+p.Quantidade = int.Parse(Console.ReadLine());
             Console.WriteLine(); //só para pular uma linha
-            Console.WriteLine("Dados do produto: " + p);
+Console.WriteLine("Dados do produto: " + p);
             Console.WriteLine();
-            Console.WriteLine("Quantidade de produto adicionado? ");
+Console.WriteLine("Quantidade de produto adicionado? ");
             int qtd = int.Parse(Console.ReadLine());
             p.AdicionarProduto(qtd);
             Console.WriteLine();
