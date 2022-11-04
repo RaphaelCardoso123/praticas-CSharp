@@ -25,7 +25,7 @@ namespace Course {
         
             Console.WriteLine();
             Console.Write("Entre com o valor para depósito: ");
-            double deposito = double.Parse(Console.ReadLine());
+            double deposito = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             c.Depositar(deposito);
 
             Console.WriteLine();
@@ -34,7 +34,7 @@ namespace Course {
 
             Console.WriteLine();
             Console.Write("Entre com o valor para saque: ");
-            double saque = double.Parse(Console.ReadLine());
+            double saque = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             c.Sacar(saque);
 
             Console.WriteLine();
