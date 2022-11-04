@@ -9,11 +9,10 @@ namespace PrimeiroProjeto {
         public string TitularConta;
         public double Saldo;
         public string DepositoConta;
-//public double Deposito;
 
 
-        public void Depositar(double deposito) {
-            deposito += Saldo;
+        public void Depositar(double saldo) {
+            Saldo += saldo;
         }
 
         public override string ToString() { 
