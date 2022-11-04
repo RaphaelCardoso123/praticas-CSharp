@@ -13,7 +13,7 @@ namespace PrimeiroProjeto {
 
 
         public void Depositar(double deposito) {
-            Saldo += deposito;
+            deposito += Saldo;
         }
 
         public override string ToString() { 

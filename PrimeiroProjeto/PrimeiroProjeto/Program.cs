@@ -9,27 +9,26 @@ namespace Course {
 
 
             Conta c = new Conta();
-        //double saldo = 0;
 
             Console.Write("Entre com o número da conta: ");
             c.NumeroConta = int.Parse(Console.ReadLine());
+
             Console.Write("Entre o títular da conta: ");
             c.TitularConta = Console.ReadLine();
+
             Console.Write("Haverá depósito inicial? ");
             c.DepositoConta = (Console.ReadLine());
 
             Console.WriteLine();
             Console.WriteLine("Dados da conta: " + c);
-        //Console.WriteLine("Conta: " + numeroConta + ", Titular: " + titularConta + ", Saldo: $" + saldo.ToString("F2"));
-
+        
             Console.WriteLine();
             Console.Write("Entre com o valor para depósito: ");
             double deposito = double.Parse(Console.ReadLine());
             c.Depositar(deposito);
 
             Console.WriteLine();
-            Console.WriteLine("Dados da conta atualizada: ");
-        //Console.WriteLine("Conta " + numeroConta + ", Titular: " + titularConta + ", Saldo: $" + saldo.ToString("F2"));
+            Console.WriteLine("Dados da conta atualizada: " + c);
 
 
 
