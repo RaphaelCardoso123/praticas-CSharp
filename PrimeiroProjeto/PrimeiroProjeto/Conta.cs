@@ -11,6 +11,12 @@ namespace PrimeiroProjeto {
         public string DepositoConta;
 
         //----------------------------------------------------------------
+        
+        //public string DepositoConta() {
+        //   if(DepositoConta == "sim") {
+        //
+        //    }
+        //}
         public void Depositar(double saldo) {
             Saldo += saldo;
         }
