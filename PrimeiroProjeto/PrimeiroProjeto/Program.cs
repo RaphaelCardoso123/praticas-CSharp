@@ -8,15 +8,53 @@ namespace Course {
         static void Main(string[] args) {
 
 
-            Console.WriteLine("Entre com o número da conta: ");
+            Conta c = new Conta();  
+
+            Console.Write("Entre com o número da conta: ");
             int numeroConta = int.Parse(Console.ReadLine());
-            Console.WriteLine("Entre o títular da conta: ");
+            Console.Write("Entre o títular da conta: ");
             string titularConta = Console.ReadLine();
-            Console.WriteLine("Haverá depósito inicial? ");
-            bool depositoConta = false;
+            Console.Write("Haverá depósito inicial? ");
+            char depositoConta = char.Parse(Console.ReadLine());
+            double saldo = 0;
 
+            Console.WriteLine();
+            Console.WriteLine("Dados da conta: ");
+            Console.WriteLine("Conta " + numeroConta + ", Titular: " + titularConta + ", Saldo: $" + saldo.ToString("F2"));
 
+            Console.WriteLine();
+            Console.Write("Entre com o valor para depósito: ");
+            double deposito = double.Parse(Console.ReadLine());
 
+            Console.WriteLine();
+            Console.WriteLine("Dados da conta atualizada: ");
+            Console.WriteLine("Conta " + numeroConta + ", Titular: " + titularConta + ", Saldo: $" + saldo.ToString("F2"));
+
+            /*
+            Produto p = new Produto();
+            Console.WriteLine("Digite os dados do produto: ");
+            Console.WriteLine("Nome: ");
+            p.Nome = Console.ReadLine();
+            Console.WriteLine("Preço: ");
+            p.Preco = double.Parse(Console.ReadLine());
+            Console.WriteLine("Quantidade: ");
+            p.Quantidade = int.Parse(Console.ReadLine());
+            Console.WriteLine(); //só para pular uma linha
+            Console.WriteLine("Dados do produto: " + p);
+            Console.WriteLine();
+            Console.WriteLine("Quantidade de produto adicionado? ");
+            int qtd = int.Parse(Console.ReadLine());
+            p.AdicionarProduto(qtd);
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados:" + p);
+            Console.WriteLine();
+            Console.WriteLine("Quantidade de produto removido? ");
+            qtd = int.Parse(Console.ReadLine());
+            p.RemoverProduto(qtd);
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados:" + p);
+            */
+            //----------------------------------------------------------------------------
             /*
             *(25) PROPERTIES / AUTOPROPERTIES (CLASSE PRODUTO)
             Produto p = new Produto("Tv", 900.00, 10);
@@ -31,7 +69,7 @@ namespace Course {
             //p.SetQuantidade(5);
             //Console.WriteLine(p.GetQuantidade());
             */
-            
+
 
 
 
