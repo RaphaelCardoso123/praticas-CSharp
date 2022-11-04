@@ -20,7 +20,8 @@ namespace Course {
             c.DepositoConta = (Console.ReadLine());
 
             Console.WriteLine();
-            Console.WriteLine("Dados da conta: " + c);
+            Console.WriteLine("Dados da conta:");
+            Console.WriteLine(c);
         
             Console.WriteLine();
             Console.Write("Entre com o valor para depósito: ");
@@ -28,9 +29,17 @@ namespace Course {
             c.Depositar(deposito);
 
             Console.WriteLine();
-            Console.WriteLine("Dados da conta atualizada: " + c);
+            Console.WriteLine("Dados da conta atualizada:");
+            Console.WriteLine(c);
 
+            Console.WriteLine();
+            Console.Write("Entre com o valor para saque: ");
+            double saque = double.Parse(Console.ReadLine());
+            c.Sacar(saque);
 
+            Console.WriteLine();
+            Console.WriteLine("Dados da conta atualizada:");
+            Console.WriteLine(c);
 
             /*
 Produto p = new Produto();

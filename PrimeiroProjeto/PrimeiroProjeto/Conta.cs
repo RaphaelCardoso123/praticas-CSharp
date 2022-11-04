@@ -10,16 +10,20 @@ namespace PrimeiroProjeto {
         public double Saldo;
         public string DepositoConta;
 
-
+        //----------------------------------------------------------------
         public void Depositar(double saldo) {
             Saldo += saldo;
         }
+        public void Sacar(double saldo) {
+            Saldo -= saldo;
+        }
 
+        //----------------------------------------------------------------
         public override string ToString() { 
             return "Conta: " + NumeroConta + ", Titular: " 
                    + TitularConta + ", Saldo: $" + Saldo.ToString("F2");
 
         }
-
+        //----------------------------------------------------------------
     }
 }
