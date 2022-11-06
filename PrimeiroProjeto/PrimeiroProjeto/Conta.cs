@@ -4,10 +4,10 @@
 namespace PrimeiroProjeto {
     internal class Conta {
 
+        public int NumeroConta { get; private set; }
+        public string TitularConta { get; set; }
+        public double Saldo { get; private set; }
 
-        public int NumeroConta;
-        public string TitularConta;
-        public double Saldo;
         private string _depositoConta;
 
         //----------------------------------------------------------------
