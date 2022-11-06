@@ -8,15 +8,9 @@ namespace PrimeiroProjeto {
         public int NumeroConta;
         public string TitularConta;
         public double Saldo;
-        public string DepositoConta;
+        private string _depositoConta;
 
         //----------------------------------------------------------------
-        
-        //public string DepositoConta() {
-        //   if(DepositoConta == "sim") {
-        //
-        //    }
-        //}
         public void Depositar(double saldo) {
             Saldo += saldo;
         }
