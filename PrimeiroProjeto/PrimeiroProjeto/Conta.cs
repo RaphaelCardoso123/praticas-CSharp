@@ -8,15 +8,26 @@ namespace PrimeiroProjeto {
         public string TitularConta { get; set; }
         public double Saldo { get; private set; }
 
-        private string _depositoConta;
+        //private string _depositoConta;
 
         //----------------------------------------------------------------
-        public void Depositar(double saldo) {
-            Saldo += saldo;
+
+        public Conta(int numeroConta, string titularConta) {
+            NumeroConta = numeroConta;
+            TitularConta = titularConta;
         }
-        public void Sacar(double saldo) {
-            Saldo -= saldo;
+        public Conta(int numeroConta, string titularConta, double saldo) : this(numeroConta, titularConta) {
+            Saldo = saldo;
         }
+
+
+        //----------------------------------------------------------------
+        //public void Depositar(double saldo) {
+        //    Saldo += saldo;
+        //}
+        //public void Sacar(double saldo) {
+        //    Saldo -= saldo;
+        //}
 
         //----------------------------------------------------------------
         public override string ToString() { 
