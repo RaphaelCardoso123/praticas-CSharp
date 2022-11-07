@@ -35,6 +35,7 @@ namespace Course {
 
             
             Conta c;
+            double Saldo;
 
             Console.Write("Entre com o número da conta: ");
             int NumeroConta = int.Parse(Console.ReadLine());
@@ -56,21 +57,21 @@ namespace Course {
             Console.WriteLine();
             Console.WriteLine("Dados da conta:");
             Console.WriteLine(c);
-
+            //;;
             Console.WriteLine("Deseja fazer saque? (s/n)");
-            char saqueConta = char.Parse(Console.ReadLine());
+            char SaqueConta = char.Parse(Console.ReadLine());
 
-            if (saqueConta == 's' || saqueConta == 'S') {
+            if (SaqueConta == 's' || SaqueConta == 'S') {
                 Console.Write("Entre com valor para saque: ");
                 double saque = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                c = new Conta(NumeroConta, TitularConta, saque);
+                c = new Conta(NumeroConta, TitularConta, Saldo);
             } else {
                 c = new Conta(NumeroConta, TitularConta);
             }
 
-            //Console.WriteLine();
-            //Console.WriteLine("Dados da conta atualizada:");
-            //Console.WriteLine(c);
+            Console.WriteLine();
+            Console.WriteLine("Dados da conta atualizada:");
+            Console.WriteLine(c);
 
             //Console.WriteLine();
             //Console.Write("Entre com o valor para saque: ");
