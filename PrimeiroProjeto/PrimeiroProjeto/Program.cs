@@ -8,7 +8,7 @@ namespace Course {
         static void Main(string[] args) {
 
 
-            Conta c = new Conta();
+            Conta c;
 
             Console.Write("Entre com o número da conta: ");
             int NumeroConta = int.Parse(Console.ReadLine());
@@ -21,14 +21,14 @@ namespace Course {
             if(DepositoConta == 's' || DepositoConta == 'S'){
                 Console.Write("Entre com o valor para depósito: ");
                 double deposito = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                c = new Conta(NumeroConta , TitularConta, DepositoConta);
+                c = new Conta(NumeroConta , TitularConta, deposito);
             } else {
                 c = new Conta(NumeroConta, TitularConta);
             }
 
-            //Console.WriteLine();
-            //Console.WriteLine("Dados da conta:");
-            //Console.WriteLine(c);
+            Console.WriteLine();
+            Console.WriteLine("Dados da conta:");
+            Console.WriteLine(c);
         
             //Console.WriteLine();
             //Console.Write("Entre com o valor para depósito: ");
