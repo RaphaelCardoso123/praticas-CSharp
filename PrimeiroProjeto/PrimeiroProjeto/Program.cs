@@ -1,6 +1,7 @@
 ﻿using PrimeiroProjeto;
 using System;
 using System.Globalization;
+using System.Net.Http.Headers;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Course {
@@ -8,6 +9,31 @@ namespace Course {
         static void Main(string[] args) {
 
 
+            /*
+            Console.WriteLine("Digite a quantidade de notas a ser calculada: ");
+            int quantNotas = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite as notas: ");
+            double notas = Convert.ToDouble(Console.ReadLine());
+
+            double media;
+
+            for (int i = 0; i <= quantNotas; i++) {
+                //media = notas  / quantNotas;
+                //Console.WriteLine("A média é: " + media);
+                media = (notas + i) / quantNotas;
+                Console.WriteLine("A média é: " + media); 
+            }
+   
+            /*
+            for (int i = 0; i == quantNotas; i++) { 
+                media = (notas + notas) / quantNotas;
+                Console.WriteLine("A média é: " + media);
+            }
+            */
+
+
+            
             Conta c;
 
             Console.Write("Entre com o número da conta: ");
@@ -18,6 +44,7 @@ namespace Course {
 
             Console.Write("Haverá depósito inicial? (s/n)");
             char DepositoConta = char.Parse(Console.ReadLine());
+
             if(DepositoConta == 's' || DepositoConta == 'S'){
                 Console.Write("Entre com o valor para depósito: ");
                 double deposito = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -29,14 +56,20 @@ namespace Course {
             Console.WriteLine();
             Console.WriteLine("Dados da conta:");
             Console.WriteLine(c);
-        
-            //Console.WriteLine();
-            //Console.Write("Entre com o valor para depósito: ");
-            //double deposito = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            //c.Depositar(deposito);
 
-            Console.WriteLine();
-            Console.WriteLine("Dados da conta atualizada:");
+            Console.WriteLine("Deseja fazer saque? (s/n)");
+            char saqueConta = char.Parse(Console.ReadLine());
+
+            if (saqueConta == 's' || saqueConta == 'S') {
+                Console.Write("Entre com valor para saque: ");
+                double saque = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                c = new Conta(NumeroConta, TitularConta, saque);
+            } else {
+                c = new Conta(NumeroConta, TitularConta);
+            }
+
+            //Console.WriteLine();
+            //Console.WriteLine("Dados da conta atualizada:");
             //Console.WriteLine(c);
 
             //Console.WriteLine();
@@ -47,6 +80,12 @@ namespace Course {
             //Console.WriteLine();
             //Console.WriteLine("Dados da conta atualizada:");
             //Console.WriteLine(c);
+            
+
+
+
+
+
 
             /*
 Produto p = new Produto();

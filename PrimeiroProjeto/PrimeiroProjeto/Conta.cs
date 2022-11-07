@@ -8,7 +8,7 @@ namespace PrimeiroProjeto {
         public string TitularConta { get; set; }
         public double Saldo { get; private set; }
 
-        private string DepositoConta;
+        //private string DepositoConta;
 
         //----------------------------------------------------------------
 
