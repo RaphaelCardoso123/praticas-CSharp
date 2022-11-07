@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Globalization;
 
 namespace PrimeiroProjeto {
     internal class Conta {
@@ -8,7 +8,7 @@ namespace PrimeiroProjeto {
         public string TitularConta { get; set; }
         public double Saldo { get; private set; }
 
-        //private string _depositoConta;
+        //private string DepositoConta;
 
         //----------------------------------------------------------------
 
@@ -26,13 +26,13 @@ namespace PrimeiroProjeto {
         //    Saldo += saldo;
         //}
         //public void Sacar(double saldo) {
-        //    Saldo -= saldo;
+        //   Saldo -= saldo;
         //}
 
         //----------------------------------------------------------------
         public override string ToString() { 
             return "Conta: " + NumeroConta + ", Titular: " 
-                   + TitularConta + ", Saldo: $" + Saldo.ToString("F2");
+                   + TitularConta + ", Saldo: $" + Saldo.ToString("F2", CultureInfo.InstalledUICulture);
 
         }
         //----------------------------------------------------------------

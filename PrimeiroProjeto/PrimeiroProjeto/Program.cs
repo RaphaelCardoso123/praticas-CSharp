@@ -11,35 +11,42 @@ namespace Course {
             Conta c = new Conta();
 
             Console.Write("Entre com o número da conta: ");
-            c.NumeroConta = int.Parse(Console.ReadLine());
+            int NumeroConta = int.Parse(Console.ReadLine());
 
             Console.Write("Entre o títular da conta: ");
-            c.TitularConta = Console.ReadLine();
+            string TitularConta = Console.ReadLine();
 
-            Console.Write("Haverá depósito inicial? ");
-            c.DepositoConta = (Console.ReadLine());
+            Console.Write("Haverá depósito inicial? (s/n)");
+            char DepositoConta = char.Parse(Console.ReadLine());
+            if(DepositoConta == 's' || DepositoConta == 'S'){
+                Console.Write("Entre com o valor para depósito: ");
+                double deposito = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                c = new Conta(NumeroConta , TitularConta, DepositoConta);
+            } else {
+                c = new Conta(NumeroConta, TitularConta);
+            }
 
-            Console.WriteLine();
-            Console.WriteLine("Dados da conta:");
-            Console.WriteLine(c);
+            //Console.WriteLine();
+            //Console.WriteLine("Dados da conta:");
+            //Console.WriteLine(c);
         
-            Console.WriteLine();
-            Console.Write("Entre com o valor para depósito: ");
-            double deposito = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            c.Depositar(deposito);
+            //Console.WriteLine();
+            //Console.Write("Entre com o valor para depósito: ");
+            //double deposito = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //c.Depositar(deposito);
 
             Console.WriteLine();
             Console.WriteLine("Dados da conta atualizada:");
-            Console.WriteLine(c);
+            //Console.WriteLine(c);
 
-            Console.WriteLine();
-            Console.Write("Entre com o valor para saque: ");
-            double saque = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            c.Sacar(saque);
+            //Console.WriteLine();
+            //Console.Write("Entre com o valor para saque: ");
+            //double saque = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //c.Sacar(saque);
 
-            Console.WriteLine();
-            Console.WriteLine("Dados da conta atualizada:");
-            Console.WriteLine(c);
+            //Console.WriteLine();
+            //Console.WriteLine("Dados da conta atualizada:");
+            //Console.WriteLine(c);
 
             /*
 Produto p = new Produto();
