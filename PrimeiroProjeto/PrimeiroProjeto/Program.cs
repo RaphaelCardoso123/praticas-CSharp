@@ -8,6 +8,21 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
+            Console.WriteLine("Digite a quantidade de notas a ser calculada: ");
+            int quantNotas = Convert.ToInt32(Console.ReadLine());
+
+            double notas = 0;
+           
+
+            for (int i = 1; i <= quantNotas; i++) {
+                Console.WriteLine("Digite as notas: ");
+                notas = Convert.ToDouble(Console.ReadLine());
+            }
+            double media = notas / quantNotas;
+
+            Console.WriteLine("A média do aluno foi de " + media );
+
+
 
             /*
             Console.WriteLine("Digite a quantidade de notas a ser calculada: ");
@@ -18,13 +33,13 @@ namespace Course {
 
             double media;
 
-            for (int i = 0; i <= quantNotas; i++) {
+            for (int i = 1; i <= quantNotas; i++) {
                 //media = notas  / quantNotas;
                 //Console.WriteLine("A média é: " + media);
                 media = (notas + i) / quantNotas;
                 Console.WriteLine("A média é: " + media); 
             }
-   
+
             /*
             for (int i = 0; i == quantNotas; i++) { 
                 media = (notas + notas) / quantNotas;
@@ -33,7 +48,13 @@ namespace Course {
             */
 
 
-            
+
+
+
+
+
+
+            /*
             Conta c;
             double Saldo;
 
@@ -81,7 +102,7 @@ namespace Course {
             //Console.WriteLine();
             //Console.WriteLine("Dados da conta atualizada:");
             //Console.WriteLine(c);
-            
+            */
 
 
 
@@ -89,22 +110,22 @@ namespace Course {
 
 
             /*
-Produto p = new Produto();
-Console.WriteLine("Digite os dados do produto: ");
-Console.WriteLine("Nome: ");
-p.Nome = Console.ReadLine();
-Console.WriteLine("Preço: ");
-p.Preco = double.Parse(Console.ReadLine());
-Console.WriteLine("Quantidade: ");
-p.Quantidade = int.Parse(Console.ReadLine());
+    Produto p = new Produto();
+    Console.WriteLine("Digite os dados do produto: ");
+    Console.WriteLine("Nome: ");
+    p.Nome = Console.ReadLine();
+    Console.WriteLine("Preço: ");
+    p.Preco = double.Parse(Console.ReadLine());
+    Console.WriteLine("Quantidade: ");
+    p.Quantidade = int.Parse(Console.ReadLine());
             Console.WriteLine(); //só para pular uma linha
-Console.WriteLine("Dados do produto: " + p);
+    Console.WriteLine("Dados do produto: " + p);
             Console.WriteLine();
-Console.WriteLine("Quantidade de produto adicionado? ");
-int qtd = int.Parse(Console.ReadLine());
-p.AdicionarProduto(qtd);
+    Console.WriteLine("Quantidade de produto adicionado? ");
+    int qtd = int.Parse(Console.ReadLine());
+    p.AdicionarProduto(qtd);
             Console.WriteLine();
-Console.WriteLine("Dados atualizados:" + p);
+    Console.WriteLine("Dados atualizados:" + p);
             Console.WriteLine();
             Console.WriteLine("Quantidade de produto removido? ");
             qtd = int.Parse(Console.ReadLine());
@@ -441,7 +462,7 @@ Console.WriteLine("Dados atualizados:" + p);
             }else {
                 Console.WriteLine("NEGATIVO");
             };
-            
+
 
             /*
             *(10) EXERCICIOS
@@ -475,6 +496,41 @@ Console.WriteLine("Dados atualizados:" + p);
             Console.WriteLine("SALARY = U$ " + salario.ToString("f2", CultureInfo.InvariantCulture));
             */
 
+
+            /*
+    while (true) {
+                Console.Write("Digite a quantidade de notas que serão calculadas: ");
+                int qNotas = Convert.ToInt32(Console.ReadLine());
+                double sumNotas = 0;
+        char continuar = '.';
+                for (int nota = 1; nota <= qNotas; nota++) {
+                Console.Write($"Digite a {nota}° nota: ");
+                sumNotas += Convert.ToDouble(Console.ReadLine());
+                }
+                double media = Math.Round(sumNotas / qNotas, 2);
+                Console.WriteLine($"A média do aluno é de: {media}");
+        if (media >= 6) {
+            Console.WriteLine("Está Aprovado");
+        }
+        else {
+            Console.WriteLine("Está Repovado");
+        }
+        do {
+            try {
+                Console.Write("Deseja escrever a nota para outro aluno(S/N) ?: ");
+                continuar = Convert.ToChar(Console.ReadLine().ToLower());
+            }
+            catch {
+                Console.WriteLine("Digite um opção valida (S/N)");
+            }
+        } while (continuar != 's' && continuar != 'n');
+
+        if (continuar == 'n') {
+            Console.WriteLine("Até logo!");
+            break;
+        }
+    }
+    */
 
             /*
             *(8) EXERCICIOS 
