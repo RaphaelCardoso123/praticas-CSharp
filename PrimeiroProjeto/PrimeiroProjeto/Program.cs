@@ -8,6 +8,7 @@ namespace Course {
     class Program {
 
         static void CalcularMedia() {
+
             Console.WriteLine("Digite a quantidade de notas a ser calculada: ");
             int quantNotas = Convert.ToInt32(Console.ReadLine());
 
