@@ -7,33 +7,26 @@ namespace PrimeiroProjeto {
         public int NumeroConta { get; private set; }
         public string TitularConta { get; set; }
         public double Saldo { get; private set; }
-
-        //private string DepositoConta;
-
         //----------------------------------------------------------------
-
         public Conta(int numeroConta, string titularConta) {
             NumeroConta = numeroConta;
             TitularConta = titularConta;
         }
-        public Conta(int numeroConta, string titularConta, double saldo) : this(numeroConta, titularConta) {
-            Saldo = saldo;
+        public Conta(int numeroConta, string titularConta, double depositoInicial) : this(numeroConta, titularConta) {
+            Depositar(depositoInicial);
         }
-
-
         //----------------------------------------------------------------
-        //public void Depositar(double saldo) {
-        //    Saldo += saldo;
-        //}
-        //public void Sacar(double saldo) {
-        //   Saldo -= saldo;
-        //}
-
+        public void Depositar(double saldo) {
+            Saldo += saldo;
+        }
+        public void Sacar(double saldo) {
+            Saldo -= saldo;
+            Saldo -= 5.00;
+        }
         //----------------------------------------------------------------
         public override string ToString() { 
             return "Conta: " + NumeroConta + ", Titular: " 
                    + TitularConta + ", Saldo: $" + Saldo.ToString("F2", CultureInfo.InstalledUICulture);
-
         }
         //----------------------------------------------------------------
     }

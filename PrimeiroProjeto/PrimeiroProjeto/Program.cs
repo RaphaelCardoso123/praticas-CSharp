@@ -8,7 +8,7 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
-   
+            
             Console.WriteLine("Digite a quantidade de notas a ser calculada: ");
             int quantNotas = Convert.ToInt32(Console.ReadLine());
 
@@ -38,6 +38,9 @@ namespace Course {
              // Console.WriteLine("Digite a quantidade de notas a ser calculada: ");
              // quantNotas = Convert.ToInt32(Console.ReadLine());
             //}
+            
+
+
 
 
             /*
@@ -66,20 +69,15 @@ namespace Course {
 
 
 
-
-
-
-
             /*
+            *(25)  (CLASSE CONTA)
             Conta c;
             double Saldo;
-
             Console.Write("Entre com o número da conta: ");
             int NumeroConta = int.Parse(Console.ReadLine());
-
             Console.Write("Entre o títular da conta: ");
             string TitularConta = Console.ReadLine();
-
+            //---------------------------------------------------------------------------------
             Console.Write("Haverá depósito inicial? (s/n)");
             char DepositoConta = char.Parse(Console.ReadLine());
 
@@ -90,18 +88,18 @@ namespace Course {
             } else {
                 c = new Conta(NumeroConta, TitularConta);
             }
-
             Console.WriteLine();
             Console.WriteLine("Dados da conta:");
             Console.WriteLine(c);
-            //;;
-            Console.WriteLine("Deseja fazer saque? (s/n)");
+            Console.WriteLine();
+            //---------------------------------------------------------------------------------
+            /*Console.WriteLine("Deseja fazer saque? (s/n)");
             char SaqueConta = char.Parse(Console.ReadLine());
 
             if (SaqueConta == 's' || SaqueConta == 'S') {
                 Console.Write("Entre com valor para saque: ");
                 double saque = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                c = new Conta(NumeroConta, TitularConta, Saldo);
+                c.Sacar(saque);
             } else {
                 c = new Conta(NumeroConta, TitularConta);
             }
@@ -109,60 +107,15 @@ namespace Course {
             Console.WriteLine();
             Console.WriteLine("Dados da conta atualizada:");
             Console.WriteLine(c);
-
-            //Console.WriteLine();
-            //Console.Write("Entre com o valor para saque: ");
-            //double saque = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            //c.Sacar(saque);
-
-            //Console.WriteLine();
-            //Console.WriteLine("Dados da conta atualizada:");
-            //Console.WriteLine(c);
             */
-
-
-
-
-
-
-            /*
-    Produto p = new Produto();
-    Console.WriteLine("Digite os dados do produto: ");
-    Console.WriteLine("Nome: ");
-    p.Nome = Console.ReadLine();
-    Console.WriteLine("Preço: ");
-    p.Preco = double.Parse(Console.ReadLine());
-    Console.WriteLine("Quantidade: ");
-    p.Quantidade = int.Parse(Console.ReadLine());
-            Console.WriteLine(); //só para pular uma linha
-    Console.WriteLine("Dados do produto: " + p);
+            //---------------------------------------------------------------------------------
             Console.WriteLine();
-    Console.WriteLine("Quantidade de produto adicionado? ");
-    int qtd = int.Parse(Console.ReadLine());
-    p.AdicionarProduto(qtd);
+            Console.Write("Entre com o valor para saque: ");
+            double saque = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            c.Sacar(saque);
             Console.WriteLine();
-    Console.WriteLine("Dados atualizados:" + p);
-            Console.WriteLine();
-            Console.WriteLine("Quantidade de produto removido? ");
-            qtd = int.Parse(Console.ReadLine());
-            p.RemoverProduto(qtd);
-            Console.WriteLine();
-            Console.WriteLine("Dados atualizados:" + p);
-            */
-            //----------------------------------------------------------------------------
-            /*
-            *(25) PROPERTIES / AUTOPROPERTIES (CLASSE PRODUTO)
-            Produto p = new Produto("Tv", 900.00, 10);
-            p.Nome = "Laptop"; //Usando properties
-            Console.WriteLine(p.Nome);//Usando properties
-            Console.WriteLine(p.Preco);//Usando properties. Só se escreve na tela pq ñ foi feito o Set na classe Produtos
-            Console.WriteLine(p.Quantidade);//Usando properties. Só se escreve na tela pq ñ foi feito o Set na classe Produtos
-            //p.SetNome("Laptop");
-            //Console.WriteLine(p.GetNome());
-            //p.SetPreco(2300);
-            //Console.WriteLine(p.GetPreco());
-            //p.SetQuantidade(5);
-            //Console.WriteLine(p.GetQuantidade());
+            Console.WriteLine("Dados da conta atualizada:");
+            Console.WriteLine(c);
             */
 
 
