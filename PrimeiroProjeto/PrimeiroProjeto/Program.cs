@@ -6,39 +6,50 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace Course {
     class Program {
-        static void Main(string[] args) {
 
-            
+        static void CalcularMedia() {
             Console.WriteLine("Digite a quantidade de notas a ser calculada: ");
             int quantNotas = Convert.ToInt32(Console.ReadLine());
 
-            double notas = 0;
+            double soma = 0;
             for (int i = 1; i <= quantNotas; i++) {
-                Console.WriteLine("Digite as notas: ");
-                notas = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Digite a " + i + "° nota: ");
+                double notas = Convert.ToDouble(Console.ReadLine());
+                soma += notas;
             }
 
             double media;
-            media = notas / quantNotas;
-            Console.WriteLine("A média do aluno foi de " + media );
+            media = soma / quantNotas;
+            Console.WriteLine("A média do aluno foi de " + media);
 
-            if (media >= 60) {
+            if (media >= 6) {
                 Console.WriteLine("Parabéns, você passou!!");
-            } else if(media >= 40){
-                Console.WriteLine("Você ficou de recuperação!!");
-            } else {
-                Console.WriteLine("Você foi reprovado!!");
+            }else {
+                Console.WriteLine("Você reprovou!!");
             }
 
-            Console.Write("Deseja calcular outra média (s/n)? ");
-            char outraMedia = Convert.ToChar(Console.ReadLine());
+            Console.Write("Deseja calcular outra média (1/2)? ");
+            int outraMedia = Convert.ToInt32(Console.ReadLine());
 
-            
-            //if(outraMedia == "s" || outraMedia == "S") {
-             // Console.WriteLine("Digite a quantidade de notas a ser calculada: ");
-             // quantNotas = Convert.ToInt32(Console.ReadLine());
-            //}
-            
+            switch (outraMedia) {
+                case 1:
+                    CalcularMedia();
+                    break;
+                default:
+                    break;
+            }
+
+        }
+        static void Main(string[] args) {
+
+            CalcularMedia();
+
+         
+
+
+
+
+
 
 
 
@@ -109,6 +120,7 @@ namespace Course {
             Console.WriteLine(c);
             */
             //---------------------------------------------------------------------------------
+            /*
             Console.WriteLine();
             Console.Write("Entre com o valor para saque: ");
             double saque = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
