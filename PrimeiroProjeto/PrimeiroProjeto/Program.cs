@@ -8,20 +8,36 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
+   
             Console.WriteLine("Digite a quantidade de notas a ser calculada: ");
             int quantNotas = Convert.ToInt32(Console.ReadLine());
 
             double notas = 0;
-           
-
             for (int i = 1; i <= quantNotas; i++) {
                 Console.WriteLine("Digite as notas: ");
                 notas = Convert.ToDouble(Console.ReadLine());
             }
-            double media = notas / quantNotas;
 
+            double media;
+            media = notas / quantNotas;
             Console.WriteLine("A média do aluno foi de " + media );
 
+            if (media >= 60) {
+                Console.WriteLine("Parabéns, você passou!!");
+            } else if(media >= 40){
+                Console.WriteLine("Você ficou de recuperação!!");
+            } else {
+                Console.WriteLine("Você foi reprovado!!");
+            }
+
+            Console.Write("Deseja calcular outra média (s/n)? ");
+            char outraMedia = Convert.ToChar(Console.ReadLine());
+
+            
+            //if(outraMedia == "s" || outraMedia == "S") {
+             // Console.WriteLine("Digite a quantidade de notas a ser calculada: ");
+             // quantNotas = Convert.ToInt32(Console.ReadLine());
+            //}
 
 
             /*
