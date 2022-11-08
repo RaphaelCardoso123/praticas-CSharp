@@ -7,6 +7,9 @@ using System.Security.Cryptography.X509Certificates;
 namespace Course {
     class Program {
 
+
+
+        //---------------------------------------------------------------------------------
         static void CalcularMedia() {
 
             Console.WriteLine("Digite a quantidade de notas a ser calculada: ");
@@ -44,9 +47,7 @@ namespace Course {
         static void Main(string[] args) {
 
             CalcularMedia();
-
-         
-
+            //---------------------------------------------------------------------------------
 
 
 
@@ -54,35 +55,12 @@ namespace Course {
 
 
 
-
-            /*
-            Console.WriteLine("Digite a quantidade de notas a ser calculada: ");
-            int quantNotas = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Digite as notas: ");
-            double notas = Convert.ToDouble(Console.ReadLine());
-
-            double media;
-
-            for (int i = 1; i <= quantNotas; i++) {
-                //media = notas  / quantNotas;
-                //Console.WriteLine("A média é: " + media);
-                media = (notas + i) / quantNotas;
-                Console.WriteLine("A média é: " + media); 
-            }
-
-            /*
-            for (int i = 0; i == quantNotas; i++) { 
-                media = (notas + notas) / quantNotas;
-                Console.WriteLine("A média é: " + media);
-            }
-            */
 
 
 
 
             /*
-            *(25)  (CLASSE CONTA)
+            *(27)  (CLASSE CONTA)
             Conta c;
             double Saldo;
             Console.Write("Entre com o número da conta: ");
@@ -133,9 +111,8 @@ namespace Course {
 
 
 
-
             /*
-            *(24) SOBRECARGA (CLASSE PRODUTO)
+            *(26) SOBRECARGA (CLASSE PRODUTO)
             Console.WriteLine("Digite os dados do produto: ");
             Console.WriteLine("Nome: ");
             string nome = Console.ReadLine();
@@ -163,7 +140,7 @@ namespace Course {
 
 
             /*
-            *(23) CONSTRUTORES (CLASSE PRODUTO)
+            *(25) CONSTRUTORES (CLASSE PRODUTO)
             Console.WriteLine("Digite os dados do produto: ");
             Console.WriteLine("Nome: ");
             string nome = Console.ReadLine ();
@@ -192,7 +169,7 @@ namespace Course {
 
 
             /*
-            *(22) STATIC
+            *(24) STATIC
             Console.WriteLine("Entre o valor do raio: ");
             double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             double circ = Calculadora.Circunferencia(raio);
@@ -205,7 +182,7 @@ namespace Course {
 
 
             /*
-            *(21) STATIC
+            *(23) STATIC
             Calculadora calc = new Calculadora();
             Console.WriteLine("Entre o valor do raio: ");
             double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -219,7 +196,7 @@ namespace Course {
 
 
             /*
-            *(20) STATIC
+            *(22) STATIC
             Console.Write("Qual a cotação do dólar de hoje? ");
             double cotacao = double.Parse(Console.ReadLine());
             Console.Write("Quantos dólares você deseja comprar??");
@@ -228,8 +205,10 @@ namespace Course {
             Console.WriteLine("Valor a ser pago em reais = " + result.ToString("F2", CultureInfo.InvariantCulture));
             */
 
+
+
             /*
-            *(19) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
+            *(21) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
             Aluno a = new Aluno();
             Console.WriteLine("Digite o nome do aluno: ");
             a.Nome = (Console.ReadLine());
@@ -252,7 +231,7 @@ namespace Course {
 
 
             /*
-            *(18) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
+            *(20) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
             Funcionario f = new Funcionario();
             Console.WriteLine("Digite o nome do funcionário: ");
             f.Nome = (Console.ReadLine());
@@ -273,7 +252,7 @@ namespace Course {
 
 
             /*
-            *(17) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
+            *(19) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS
             Retangulo r = new Retangulo();
             Console.WriteLine("Digite a largura e altura do retângulo: ");
             Console.WriteLine("Largura: ");
@@ -289,7 +268,7 @@ namespace Course {
 
 
             /*
-            *(16) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS (CLASSE PRODUTO)
+            *(18) TOSTRING / OBJECT / ATRIBUTOS / MÉTODOS (CLASSE PRODUTO)
             Produto p = new Produto ();
             Console.WriteLine("Digite os dados do produto: ");
             Console.WriteLine("Nome: ");
@@ -315,8 +294,9 @@ namespace Course {
             */
 
 
+
             /*
-            *(15) EXERCICIOS / CLASSE / METODOS
+            *(17) EXERCICIOS / CLASSE / METODOS
             SalariomMedio p1 = new SalariomMedio();
             SalariomMedio p2 = new SalariomMedio();
             Console.WriteLine("Dados do primeiro funcionário: ");
@@ -334,8 +314,9 @@ namespace Course {
             */
 
 
+
             /*
-            *(15) EXERCICIOS / CLASSE / METODOS
+            *(16) EXERCICIOS / CLASSE / METODOS
             Pessoa p1 = new Pessoa();
             Pessoa p2 = new Pessoa();
             Console.WriteLine("Dados da primeira pessoa:");
@@ -357,8 +338,9 @@ namespace Course {
             */
 
 
+
             /*
-            *(14) EXERCICIOS / WHILE
+            *(15) EXERCICIOS / WHILE
             int gasolina = 0;
             int alcool = 0;
             int diesel = 0;           
@@ -384,8 +366,9 @@ namespace Course {
             */
 
 
+
             /*
-            *(10) EXERCICIOS
+            *(14) EXERCICIOS
             Console.Write("Digite sua senha: ");
             int senha = int.Parse(Console.ReadLine());
             while (senha != 2022) {
@@ -396,6 +379,7 @@ namespace Course {
             */
 
 
+
             /*
             *(13)FUNÇÃO 
             Console.WriteLine("Digite três números..");                 //USÚARIO DIGITA 3 NÚMEROS
@@ -404,8 +388,8 @@ namespace Course {
             int n3 = int.Parse(Console.ReadLine());
             double resultado = Maior(n1, n2, n3);                       //PROGRAMA CHAMA A FUNÇÃO QUE CALCULA O MAIOR
             Console.WriteLine("O maior número foi o " + resultado);     //MOSTRA NA TELA O RESULTADO
-        }
-        static int Maior(int a, int b, int c) {                         //ESSA É A FUNÇÃO
+            }
+            static int Maior(int a, int b, int c) {                         //ESSA É A FUNÇÃO
             int m;
             if (a > b && a > c) {
                 m = a;
@@ -417,8 +401,9 @@ namespace Course {
                 m = c;
             }
             return m;
-         //}
-         */
+            //}
+            */
+
 
 
             /*
@@ -435,6 +420,7 @@ namespace Course {
             */
 
 
+
             /*
             *(11) EXERCICIOS
             Console.WriteLine("Digite um número inteiro: ");
@@ -444,6 +430,7 @@ namespace Course {
             }else {
                 Console.WriteLine("NEGATIVO");
             };
+
 
 
             /*
@@ -465,6 +452,7 @@ namespace Course {
             */
 
 
+
             /*
             *(9) EXERCICIOS 
             Console.WriteLine("Insira o código do funcionário: ");
@@ -479,7 +467,6 @@ namespace Course {
             */
 
 
-           
 
             /*
             *(8) EXERCICIOS 
@@ -494,6 +481,7 @@ namespace Course {
             int diferenca = (a * b) - (c * d);
             Console.WriteLine("DIFERENÇA = " + diferenca);
             */
+
 
 
             /*
@@ -512,6 +500,7 @@ namespace Course {
             int c = a + b;
             Console.WriteLine("SOMA = " + c);
             */
+
 
 
             /*
@@ -537,6 +526,7 @@ namespace Course {
             */
 
 
+
             /*
             *(5) VETOR /  TOSTRING("F2,CULTUREINFO.INVARIANTCULTURE / (dessa forma cada dado inserido precisa + Espaço)
             string[] vet = Console.ReadLine().Split(' ');
@@ -556,6 +546,7 @@ namespace Course {
             */
 
 
+
             /*
             *(4) PARSE / CULTUREINFO.INVARIANTCULTURE / (dessa forma cada dado inserido precisa + Enter)
             int n1 = int.Parse(Console.ReadLine());
@@ -568,6 +559,7 @@ namespace Course {
             */
 
 
+
             /*
             *(3) SPLIT / CONSOLE.READLINE
             string s = Console.ReadLine(); //Outra maneira é tirar essa parte..
@@ -577,6 +569,7 @@ namespace Course {
             string p3 = vet[2];
             Console.WriteLine(p2);
             */
+
 
 
             /*
@@ -597,6 +590,7 @@ namespace Course {
             Console.WriteLine($"Arredondado (três casas decimais): {medida:F3}");
             Console.WriteLine("Separador decimal invariant culture: " + medida.ToString("F3",CultureInfo.InvariantCulture));
             */
+
 
 
             /*
