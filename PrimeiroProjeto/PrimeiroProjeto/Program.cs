@@ -9,7 +9,31 @@ namespace Course {
         static void Main(string[] args) {
 
 
-            //---------------------------------------------------------------------------------
+
+            Console.Write("Digite quantas alturas vão ser feita a média: ");
+            int n = int.Parse(Console.ReadLine());
+
+            double[] vect = new double[n];
+
+            for (int i = 0; i < n; i++) {
+                Console.Write("Entre com a altura: ");
+                vect[i] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture); 
+            }
+
+            double sum = 0.0;
+            for (int i = 0; i < n; i++) {
+                sum += vect[i];
+            }
+
+            double avg = sum / n;
+            Console.WriteLine("A média das alturas é de: " + avg.ToString("f2", CultureInfo.InvariantCulture));
+
+
+
+
+
+            /*
+            *(28)  DESAFIO LÓGICA TIACADEMY
             static void CalcularMedia() {
                 Console.WriteLine("Digite a quantidade de notas a ser calculada: ");
                 int quantNotas = Convert.ToInt32(Console.ReadLine());
@@ -40,15 +64,7 @@ namespace Course {
                 }
             }
             CalcularMedia();
-            //---------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
+            */
 
 
 
