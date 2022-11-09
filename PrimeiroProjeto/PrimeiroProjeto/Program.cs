@@ -6,11 +6,11 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace Course {
     class Program {
+        static void Main(string[] args) {
 
 
-
-        //---------------------------------------------------------------------------------
-        static void CalcularMedia() {
+            //---------------------------------------------------------------------------------
+            static void CalcularMedia() {
 
             Console.WriteLine("Digite a quantidade de notas a ser calculada: ");
             int quantNotas = Convert.ToInt32(Console.ReadLine());
@@ -28,8 +28,9 @@ namespace Course {
 
             if (media >= 6) {
                 Console.WriteLine("Parabéns, você passou!!");
-            }else {
-                Console.WriteLine("Você reprovou!!");
+            }
+            else {
+                Console.WriteLine("Você ficou de recuperação!!");
             }
 
             Console.WriteLine("Deseja calcular outra média?");
@@ -39,13 +40,11 @@ namespace Course {
             switch (outraMedia) {
                 case 1:
                     CalcularMedia();
-                break;
-             default:
-                break;
+                    break;
+                default:
+                    break;
             }
         }
-        static void Main(string[] args) {
-
             CalcularMedia();
             //---------------------------------------------------------------------------------
 
