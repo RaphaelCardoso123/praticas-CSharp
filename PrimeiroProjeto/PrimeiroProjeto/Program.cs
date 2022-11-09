@@ -18,6 +18,9 @@ namespace Course {
                 string name = Console.ReadLine();
                 string email = Console.ReadLine();
                 int room = int.Parse(Console.ReadLine());
+
+                quarto[i] = new Quartos(name, email, room);
+
             }
 
 
