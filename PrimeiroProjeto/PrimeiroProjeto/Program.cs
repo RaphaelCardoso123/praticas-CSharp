@@ -9,11 +9,10 @@ namespace Course {
         static void Main(string[] args) {
 
 
-            Quartos[] quarto = new Quartos[rent];
+            Quartos[] quarto = new Quartos[10];
 
             Console.WriteLine("How many rooms will be rented? ");
             int rent = int.Parse(Console.ReadLine());
-
 
             for (int i = 1; i < rent; i++) { 
 
