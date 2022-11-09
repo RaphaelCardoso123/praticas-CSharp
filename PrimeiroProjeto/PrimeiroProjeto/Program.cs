@@ -10,25 +10,26 @@ namespace Course {
 
 
 
+
+
+
+
+            /*
+            *(29)  VETOR TIPO STRUCT
             Console.Write("Digite quantas alturas vão ser feita a média: ");
             int n = int.Parse(Console.ReadLine());
-
             double[] vect = new double[n];
-
             for (int i = 0; i < n; i++) {
                 Console.Write("Entre com a altura: ");
                 vect[i] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture); 
             }
-
             double sum = 0.0;
             for (int i = 0; i < n; i++) {
                 sum += vect[i];
             }
-
             double avg = sum / n;
             Console.WriteLine("A média das alturas é de: " + avg.ToString("f2", CultureInfo.InvariantCulture));
-
-
+            */
 
 
 
@@ -173,7 +174,6 @@ namespace Course {
             Console.WriteLine();
             Console.WriteLine("Dados atualizados:" + p);
             */
-
 
 
 
