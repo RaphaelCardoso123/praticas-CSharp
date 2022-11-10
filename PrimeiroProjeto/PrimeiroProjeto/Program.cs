@@ -21,17 +21,20 @@ namespace Course {
 
             for (int i = 1; i <= rent; i++) {
 
-                Console.WriteLine("Digite seu nome: ");
+                Console.Write("Digite seu nome: ");
                 name = Console.ReadLine();
-                Console.WriteLine("Digite seu Email: ");
+                Console.Write("Digite seu Email: ");
                 email = Console.ReadLine();
-                Console.WriteLine("Qual dos quartos você deseja se hospedar? (1 - 10)");
+                Console.Write("Qual dos quartos você deseja se hospedar? (1 - 10)");
                 quartoHospede = int.Parse(Console.ReadLine());
 
                 quarto[i] = new Quartos(name, email, quartoHospede);
 
                 //Console.WriteLine(quarto);
-                Console.WriteLine("Rent #" + quartoHospede + ", Name: " + name + ", Email: " + email + ", Room: " + quartoHospede);
+                Console.WriteLine("Rent #" + i + ":");   
+                Console.WriteLine("Name: " + name);
+                Console.WriteLine("Email: " + email);
+                Console.WriteLine("Room: " + quartoHospede);
             }
 
             
