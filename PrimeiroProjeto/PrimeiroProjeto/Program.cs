@@ -1,13 +1,40 @@
 ﻿using PrimeiroProjeto;
 using System;
 using System.Globalization;
-using System.Net.Http.Headers;
-using System.Security.Cryptography.X509Certificates;
-using System.Xml.Linq;
+
 
 namespace Course {
     class Program {
         static void Main(string[] args) {
+
+
+            //PARAMS
+            int test7 = Calculator.Sum(2, 3);
+            int test8 = Calculator.Sum(2, 3, 5);
+            int test9 = Calculator.Sum(2, 3, 5, 10, 50, 320, 421, 568);
+
+            Console.WriteLine(test7);
+            Console.WriteLine(test8);
+            Console.WriteLine(test9);
+
+            //
+            /*SOLUÇÃO COM VETOR
+            int test4 = Calculator.Sum(new int[ ] { 2, 3 });
+            int test5 = Calculator.Sum(new int[ ] {2, 3, 5});
+            int test6 = Calculator.Sum(new int[] { 2, 3, 5, 10 });
+            Console.WriteLine(test4);
+            Console.WriteLine(test5);
+            Console.WriteLine(test6);
+            */
+            //
+            /* SOLUÇÃO SIMPLES CALCULADORA 
+            int test1 = Calculator.Sum(2, 3);
+            int test2 = Calculator.Sum(2, 3, 5);
+            int test3 = Calculator.Sum(2, 3, 5, 10);
+            Console.WriteLine(test1);
+            Console.WriteLine(test2);
+            Console.WriteLine(test3);
+            */
 
 
 
