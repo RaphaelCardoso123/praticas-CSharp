@@ -9,34 +9,41 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
-
             Quartos[] quarto = new Quartos[10];
 
             Console.Write("How many rooms will be rented? ");
             int rent = int.Parse(Console.ReadLine());
 
-            string name;
-            string email;
-            int quartoHospede;
-
             for (int i = 1; i <= rent; i++) {
+                Console.WriteLine( );
+                Console.WriteLine($"Rent #{i}:");
+                Console.Write("Nome: ");
+                string nome = Console.ReadLine();
+                Console.Write("Email: ");
+                string email = Console.ReadLine();
+                Console.Write("Qual dos quartos você deseja se hospedar? ");
+                int quartoHospede = int.Parse(Console.ReadLine());
 
+                quarto[quartoHospede] = new Quartos(nome, email);
+            }
+            /*
+            Quartos[] quarto = new Quartos[10];
+            Console.Write("How many rooms will be rented? ");
+            int rent = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= rent; i++) {
                 Console.Write("Digite seu nome: ");
-                name = Console.ReadLine();
+                string name = Console.ReadLine();
                 Console.Write("Digite seu Email: ");
-                email = Console.ReadLine();
+                string email = Console.ReadLine();
                 Console.Write("Qual dos quartos você deseja se hospedar? (1 - 10)");
-                quartoHospede = int.Parse(Console.ReadLine());
-
+                int quartoHospede = int.Parse(Console.ReadLine());
                 quarto[i] = new Quartos(name, email, quartoHospede);
-
-                //Console.WriteLine(quarto);
                 Console.WriteLine("Rent #" + i + ":");   
                 Console.WriteLine("Name: " + name);
                 Console.WriteLine("Email: " + email);
                 Console.WriteLine("Room: " + quartoHospede);
             }
-
+            */
             
 
 

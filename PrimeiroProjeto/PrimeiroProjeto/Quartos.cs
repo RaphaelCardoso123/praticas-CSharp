@@ -5,23 +5,17 @@ namespace PrimeiroProjeto {
 
         public string Name { get; set; }
         public string Email { get; set; }
-        public int quartoHospede { get; set; }
-
-        //public string quartoHospede;
 
         //CONSTRUTOR
-        public Quartos(string name, string email, int quartoHospede) {
+        public Quartos(string name, string email) {
             Name = name;
             Email = email;
         }
 
         //TOSTRING
-        /*override public string ToString() {
-           return "Rent #" + quartoHospede + ": " +
-                    "Name: " + Name +
-                    "Email: " + Email +
-                    "Room: " + quartoHospede;
-        }*/
+        override public string ToString() {
+           return Name + ", " + Email;
+        }
 
     }
 }
