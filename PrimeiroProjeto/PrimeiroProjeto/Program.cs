@@ -3,6 +3,7 @@ using System;
 using System.Globalization;
 using System.Net.Http.Headers;
 using System.Security.Cryptography.X509Certificates;
+using System.Xml.Linq;
 
 namespace Course {
     class Program {
@@ -11,20 +12,29 @@ namespace Course {
 
             Quartos[] quarto = new Quartos[10];
 
-            Console.WriteLine("How many rooms will be rented? ");
+            Console.Write("How many rooms will be rented? ");
             int rent = int.Parse(Console.ReadLine());
+
+            string name;
+            string email;
+            int quartoHospede;
 
             for (int i = 1; i <= rent; i++) {
 
                 Console.WriteLine("Digite seu nome: ");
-                string name = Console.ReadLine();
+                name = Console.ReadLine();
                 Console.WriteLine("Digite seu Email: ");
-                string email = Console.ReadLine();
-                
+                email = Console.ReadLine();
+                Console.WriteLine("Qual dos quartos você deseja se hospedar? (1 - 10)");
+                quartoHospede = int.Parse(Console.ReadLine());
 
-                quarto[i] = new Quartos(name, email);
+                quarto[i] = new Quartos(name, email, quartoHospede);
 
+                //Console.WriteLine(quarto);
+                Console.WriteLine("Rent #" + quartoHospede + ", Name: " + name + ", Email: " + email + ", Room: " + quartoHospede);
             }
+
+            
 
 
             /*
