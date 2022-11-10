@@ -14,13 +14,15 @@ namespace Course {
             Console.WriteLine("How many rooms will be rented? ");
             int rent = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i < rent; i++) { 
+            for (int i = 1; i <= rent; i++) {
 
+                Console.WriteLine("Digite seu nome: ");
                 string name = Console.ReadLine();
+                Console.WriteLine("Digite seu Email: ");
                 string email = Console.ReadLine();
-                int room = int.Parse(Console.ReadLine());
+                
 
-                quarto[i] = new Quartos(name, email, room);
+                quarto[i] = new Quartos(name, email);
 
             }
 

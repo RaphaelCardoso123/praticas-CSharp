@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PrimeiroProjeto {
     internal class Quartos {
@@ -11,7 +7,7 @@ namespace PrimeiroProjeto {
         public string Email { get; set; }
 
         //CONSTRUTOR
-        public Quartos(string name, string email, int room) {
+        public Quartos(string name, string email) {
             Name = name;
             Email = email;
         }
