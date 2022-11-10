@@ -7,16 +7,15 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
-
-            //PARAMS
+            /*
+            (31)*PARAMS (SOLUÇÃO COM PARAMS)
             int test7 = Calculator.Sum(2, 3);
             int test8 = Calculator.Sum(2, 3, 5);
             int test9 = Calculator.Sum(2, 3, 5, 10, 50, 320, 421, 568);
-
             Console.WriteLine(test7);
             Console.WriteLine(test8);
             Console.WriteLine(test9);
-
+            /*
             //
             /*SOLUÇÃO COM VETOR
             int test4 = Calculator.Sum(new int[ ] { 2, 3 });
@@ -55,7 +54,7 @@ namespace Course {
             quarto[quartoHospede] = new Quartos(nome, email);
             }
             //
-            *(30) EXERCICIO TENTATIVA 1
+            *EXERCICIO TENTATIVA 1
             Quartos[] quarto = new Quartos[10];
             Console.Write("How many rooms will be rented? ");
             int rent = int.Parse(Console.ReadLine());
