@@ -7,6 +7,26 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
+            //FOREACH
+
+            string[] vect = new string[] { "Flávia, Jessica, Thais" };
+            
+            //USANDO FOR
+            for (int i = 0; i < vect.Length; i++) {
+                Console.WriteLine(vect[i]);
+            }
+
+            Console.WriteLine("--------------------------------------");
+            
+            //USANDO FOREACH
+            foreach (string testando in vect) {
+                Console.WriteLine(testando);
+            }
+
+
+
+
+
             /*
             (31)*PARAMS (SOLUÇÃO COM PARAMS)
             int test7 = Calculator.Sum(2, 3);
