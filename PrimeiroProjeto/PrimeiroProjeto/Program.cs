@@ -1,6 +1,7 @@
 ﻿using PrimeiroProjeto;
 using System;
 using System.Globalization;
+using System.Xml.Linq;
 
 
 namespace Course {
@@ -8,7 +9,37 @@ namespace Course {
         static void Main(string[] args) {
 
 
+            Employee e = new Employee();
 
+            Console.Write("How many employees will be registered? ");
+            int emp = int.Parse(Console.ReadLine());
+            
+            Console.Write("Id: ");
+            e.Id = int.Parse(Console.ReadLine());
+            Console.Write("Name: ");
+            e.Name = Console.ReadLine();
+            Console.Write("Salary: ");
+            e.Salary = double.Parse(Console.ReadLine());
+
+
+
+
+
+            /*
+            Quartos[] quarto = new Quartos[10];
+            Console.Write("How many rooms will be rented? ");
+            int rent = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= rent; i++) {
+                Console.WriteLine();
+                Console.WriteLine($"Rent #{i}:");
+                Console.Write("Nome: ");
+                string nome = Console.ReadLine();
+                Console.Write("Email: ");
+                string email = Console.ReadLine();
+                Console.Write("Qual dos quartos você deseja se hospedar? ");
+                int quartoHospede = int.Parse(Console.ReadLine());
+                quarto[quartoHospede] = new Quartos(nome, email);
+            }*/
 
 
 
