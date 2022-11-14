@@ -8,7 +8,7 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
-
+            /*
             Employee e = new Employee();
 
             Console.Write("How many employees will be registered? ");
@@ -20,12 +20,12 @@ namespace Course {
             e.Name = Console.ReadLine();
             Console.Write("Salary: ");
             e.Salary = double.Parse(Console.ReadLine());
+            */
 
 
 
 
-
-            /*
+            
             Quartos[] quarto = new Quartos[10];
             Console.Write("How many rooms will be rented? ");
             int rent = int.Parse(Console.ReadLine());
@@ -39,7 +39,7 @@ namespace Course {
                 Console.Write("Qual dos quartos você deseja se hospedar? ");
                 int quartoHospede = int.Parse(Console.ReadLine());
                 quarto[quartoHospede] = new Quartos(nome, email);
-            }*/
+            }
 
 
 
