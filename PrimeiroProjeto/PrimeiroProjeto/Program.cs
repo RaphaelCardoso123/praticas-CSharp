@@ -28,15 +28,34 @@ namespace Course {
                 list.Add(new Employee(id, name, salary));
                 Console.WriteLine();
             }
-            
-           
-            
-           
 
             Console.Write("Enter the employee id that will have the salary incresed: ");
-            Console.Write("Enter the porcentage: ");
+            int empId = int.Parse(Console.ReadLine());
+
+            Employee emplo = list.Find(x => x.Id == empId);
+            if (emp != null)
+            {
+                Console.Write("Enter the porcentage: ");
+                double percentage = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                emplo.IncreaseSalary(percentage);
+            }
+            else
+            {
+                Console.WriteLine("Id not found!");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Updated list of employee: ");
+            foreach (Employee obj in list)
+            {
+                Console.WriteLine(obj);
+            }
+
+
+
             
-            Console.WriteLine("");
+            
+         
            
             /*
             APAGAR REPETIDO
