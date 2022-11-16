@@ -11,8 +11,8 @@ namespace Course {
 
 
             //(34) EXPRESSÃO CONDICIONAL TENÁRIA
-
-            //double preco = double.Parse(Console.ReadLine());
+            Console.Write("Digite o preço: ");
+            double preco = double.Parse(Console.ReadLine());
             //USANDO IF
             //double desconto;
             //if (preco < 20.0)
@@ -24,11 +24,10 @@ namespace Course {
             //    desconto = preco * 0.05;
             //}
             //
-            double preco = double.Parse(Console.ReadLine());
             //USANDO CONDICIONAL TENÁRIA
             double desconto = (preco < 20) ? preco * 0.1 : preco * 0.05;
 
-            Console.WriteLine(desconto);
+            Console.WriteLine($"O valor do desconto é de {desconto}");
 
 
 
