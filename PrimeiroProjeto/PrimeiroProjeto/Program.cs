@@ -8,24 +8,36 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
-            
-            Employee e = new Employee();
+
+
 
             Console.Write("How many employees will be registered? ");
             int emp = int.Parse(Console.ReadLine());
+
+            List<Employee> list = new List<Employee>();
+
+            for (int i = 1; i < emp; i++)
+            {
+                Console.WriteLine("Employee #" + i + ":");
+                Console.Write("Id: ");
+                int id = int.Parse(Console.ReadLine());
+                Console.Write("Name: ");
+                string name = Console.ReadLine();
+                Console.Write("Salary: ");
+                double salary = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                list.Add(new Employee(id, name, salary));
+                Console.WriteLine();
+            }
             
-            Console.Write("Id: ");
-            e.Id = int.Parse(Console.ReadLine());
-            Console.Write("Name: ");
-            e.Name = Console.ReadLine();
-            Console.Write("Salary: ");
-            e.Salary = double.Parse(Console.ReadLine());
+           
+            
+           
 
             Console.Write("Enter the employee id that will have the salary incresed: ");
             Console.Write("Enter the porcentage: ");
             
             Console.WriteLine("");
-
+           
             /*
             APAGAR REPETIDO
             Quartos[] quarto = new Quartos[10];
@@ -59,7 +71,7 @@ namespace Course {
             foreach (string testando in vect) {
                 Console.WriteLine(testando);
             }
-            */
+            /*
 
 
 

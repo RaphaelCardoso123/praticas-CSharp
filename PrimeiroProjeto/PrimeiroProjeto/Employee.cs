@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 
 namespace PrimeiroProjeto {
@@ -17,7 +18,15 @@ namespace PrimeiroProjeto {
             Salary = salary;
         }   
 
+        public void IncreaseSalary(double percentage)
+        {
+            Salary += Salary * percentage / 100.0;
+        }
 
-
+        //OVERRIDE
+        public override string ToString()
+        {
+            return Id + ", " + Name + ", " + Salary.ToString("F2", CultureInfo.InvariantCulture);
+        }
     }
 }
