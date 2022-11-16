@@ -8,7 +8,7 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
-            /*
+            
             Employee e = new Employee();
 
             Console.Write("How many employees will be registered? ");
@@ -20,14 +20,17 @@ namespace Course {
             e.Name = Console.ReadLine();
             Console.Write("Salary: ");
             e.Salary = double.Parse(Console.ReadLine());
-            */
 
-
-
-
+            Console.Write("Enter the employee id that will have the salary incresed: ");
+            Console.Write("Enter the porcentage: ");
             
+            Console.WriteLine("");
+
+            /*
+            APAGAR REPETIDO
             Quartos[] quarto = new Quartos[10];
             Console.Write("How many rooms will be rented? ");
+
             int rent = int.Parse(Console.ReadLine());
             for (int i = 1; i <= rent; i++) {
                 Console.WriteLine();
@@ -40,6 +43,7 @@ namespace Course {
                 int quartoHospede = int.Parse(Console.ReadLine());
                 quarto[quartoHospede] = new Quartos(nome, email);
             }
+            */
 
 
 
