@@ -1,6 +1,7 @@
 ﻿using PrimeiroProjeto;
 using System;
 using System.Globalization;
+using System.Net;
 using System.Xml.Linq;
 
 
@@ -9,13 +10,34 @@ namespace Course {
         static void Main(string[] args) {
 
 
+            //(34) EXPRESSÃO CONDICIONAL TENÁRIA
+
+            //double preco = double.Parse(Console.ReadLine());
+            //USANDO IF
+            //double desconto;
+            //if (preco < 20.0)
+            //{
+            //    desconto = preco * 0.1;
+            //}
+            //else
+            //{
+            //    desconto = preco * 0.05;
+            //}
+            //
+            double preco = double.Parse(Console.ReadLine());
+            //USANDO CONDICIONAL TENÁRIA
+            double desconto = (preco < 20) ? preco * 0.1 : preco * 0.05;
+
+            Console.WriteLine(desconto);
 
 
+
+
+            /*
+            *(33) EXERCICIO LIST
             Console.Write("How many employees will be registered? ");
             int emp = int.Parse(Console.ReadLine());
-
             List<Employee> list = new List<Employee>();
-
             for (int i = 1; i < emp; i++)
             {
                 Console.WriteLine("Employee #" + i + ":");
@@ -28,10 +50,8 @@ namespace Course {
                 list.Add(new Employee(id, name, salary));
                 Console.WriteLine();
             }
-
             Console.Write("Enter the employee id that will have the salary incresed: ");
             int empId = int.Parse(Console.ReadLine());
-
             Employee emplo = list.Find(x => x.Id == empId);
             if (emp != null)
             {
@@ -49,30 +69,6 @@ namespace Course {
             foreach (Employee obj in list)
             {
                 Console.WriteLine(obj);
-            }
-
-
-
-            
-            
-         
-           
-            /*
-            APAGAR REPETIDO
-            Quartos[] quarto = new Quartos[10];
-            Console.Write("How many rooms will be rented? ");
-
-            int rent = int.Parse(Console.ReadLine());
-            for (int i = 1; i <= rent; i++) {
-                Console.WriteLine();
-                Console.WriteLine($"Rent #{i}:");
-                Console.Write("Nome: ");
-                string nome = Console.ReadLine();
-                Console.Write("Email: ");
-                string email = Console.ReadLine();
-                Console.Write("Qual dos quartos você deseja se hospedar? ");
-                int quartoHospede = int.Parse(Console.ReadLine());
-                quarto[quartoHospede] = new Quartos(nome, email);
             }
             */
 
