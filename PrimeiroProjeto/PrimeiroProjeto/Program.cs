@@ -9,7 +9,6 @@ namespace Course {
     class Program {
         static void Main(string[] args) {
 
-
             //(34) EXPRESSÃO CONDICIONAL TENÁRIA
 
             Console.Write("Digite o preço: ");
@@ -29,8 +28,7 @@ namespace Course {
             //USANDO CONDICIONAL TENÁRIA
             double desconto = (preco < 20) ? preco * 0.1 : preco * 0.05;
             Console.WriteLine($"O valor do desconto é de {desconto}");
-            
-
+           
 
 
             /*
@@ -756,7 +754,6 @@ namespace Course {
             // Essa é a única forma possivel de passar o (.) no lugar da (,) usando => "saldo".ToString("F2",CultureInfo.InvariantCulture)
             Console.WriteLine(nome + " tem " + idade + " anos de idade e " + saldo.ToString("F2",CultureInfo.InvariantCulture) + " de reais no banco." ); 
             */
-
         }
     }
 }
