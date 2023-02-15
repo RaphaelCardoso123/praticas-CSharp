@@ -4,13 +4,11 @@ using System.Globalization;
 using System.Net;
 using System.Xml.Linq;
 
-
 namespace Course {
     class Program {
         static void Main(string[] args) {
 
             //(34) EXPRESSÃO CONDICIONAL TENÁRIA
-
             Console.Write("Digite o preço: ");
             double preco = double.Parse(Console.ReadLine());
 
@@ -533,12 +531,12 @@ namespace Course {
 
             /*
             *(13)FUNÇÃO 
-            Console.WriteLine("Digite três números..");                 //USÚARIO DIGITA 3 NÚMEROS
+            Console.WriteLine("Digite três números..");           
             int n1 = int.Parse(Console.ReadLine());
             int n2 = int.Parse(Console.ReadLine());
             int n3 = int.Parse(Console.ReadLine());
             double resultado = Maior(n1, n2, n3);                       //PROGRAMA CHAMA A FUNÇÃO QUE CALCULA O MAIOR
-            Console.WriteLine("O maior número foi o " + resultado);     //MOSTRA NA TELA O RESULTADO
+            Console.WriteLine("O maior número foi o " + resultado);    
             }
             static int Maior(int a, int b, int c) {                         //ESSA É A FUNÇÃO
             int m;
